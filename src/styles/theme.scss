@@ -1,0 +1,15 @@
+/* Breakpoints */
+$breakpoints: (
+  'xs': 480,
+  'xs2': 568,
+  'sm': 768,
+  'md': 1024,
+  'lg': 1280,
+  'xl': 1600,
+  'xl_2': 1920,
+  'xl_3': 2560,
+);
+
+/* TRANSITION */
+$interaction-transition-duration: 200ms;
+$interaction-transition-timing-function: ease-in-out

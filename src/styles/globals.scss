@@ -1,0 +1,64 @@
+:root {
+  --default-font-family: var(--alegreya-sans);
+  --color-black: #000000;
+  --color-black-hover: #333333;
+  --color-black-active: #1a1a1a;
+  --color-white: #ffffff;
+  --color-white-hover: #e0e0e0;
+  --color-white-active: #cccccc;
+  --color-green: #53B75A;
+  --color-green-hover: #65c56b;
+  --color-green-active: #419049;
+  --color-red: #CE3232;
+  --color-red-hover: #e04444;
+  --color-red-active: #a92828;
+  --color-blue: #2685DC;
+  --color-blue-hover: #3a98ed;
+  --color-blue-active: #1b6bb6;
+  --color-yellow: #CF9F24;
+  --color-yellow-hover: #e0b837;
+  --color-yellow-active: #a6751b;
+  --color-gray: #787878;
+  --color-gray-hover: #9a9a9a;
+  --color-gray-active: #5a5a5a;
+  --color-disabled: #b5b5b5;
+}
+
+html,
+body,
+#__next {
+  font-family: var(--default-font-family), SansSerif, sans-serif;
+  color: var(--color-black);
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  vertical-align: baseline;
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}

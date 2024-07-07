@@ -1,0 +1,16 @@
+{
+  "routes": {
+    "home": "Domov",
+    "shop": "Trgovina"
+  },
+  "meta": {
+    "title": "Animus",
+    "description": "Skrivnostni tuneli energije po vesolju, fantastična in starodavna bitja, čarobni kristali, nenavadni planeti, prijatelji in sovražniki, dobro in zlo – po najbolj znanem čarovniku in najmočnejšem prstanu zdaj slovenska fantazijska knjiga."
+  },
+  "shared": {
+    "backToTop": "Na začetek"
+  },
+  "pageNotFound": {
+    "title": "Page Not Found"
+  }
+}

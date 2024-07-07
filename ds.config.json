@@ -1,0 +1,5 @@
+{
+  "source": "./src/styles/tokens/tokens.json",
+  "destinationFolder": "./src/styles/tokens",
+  "destinationFileName": "design-tokens"
+}

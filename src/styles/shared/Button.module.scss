@@ -1,0 +1,77 @@
+@import '../index';
+
+.button {
+  @include button;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.buttonPrimary {
+  &.primaryBlack {
+    @include buttonColor(var(--color-white), var(--color-black), var(--color-black));
+    @include buttonState(var(--color-black-hover), var(--color-black-active));
+  }
+
+  &.primaryRed {
+    @include buttonColor(var(--color-white), var(--color-red), var(--color-red));
+    @include buttonState(var(--color-red-hover), var(--color-red-active));
+  }
+
+  &.primaryGreen {
+    @include buttonColor(var(--color-white), var(--color-green), var(--color-green));
+    @include buttonState(var(--color-green-hover), var(--color-green-active));
+  }
+
+  &.primaryBlue {
+    @include buttonColor(var(--color-white), var(--color-blue), var(--color-blue));
+    @include buttonState(var(--color-blue-hover), var(--color-blue-active));
+  }
+
+  &.primaryYellow {
+    @include buttonColor(var(--color-white), var(--color-yellow), var(--color-yellow));
+    @include buttonState(var(--color-yellow-hover), var(--color-yellow-active));
+  }
+
+  &.primaryGray {
+    @include buttonColor(var(--color-white), var(--color-gray), var(--color-gray));
+    @include buttonState(var(--color-gray-hover), var(--color-gray-active));
+  }
+
+  @include buttonPrimaryDisabled;
+}
+
+.buttonOutlined {
+  &.outlinedBlack {
+    @include buttonColor(var(--color-black), transparent, var(--color-black));
+    @include buttonStateOutlined(var(--color-black), var(--color-black-active));
+  }
+
+  &.outlinedRed {
+    @include buttonColor(var(--color-red), transparent, var(--color-red));
+    @include buttonStateOutlined(var(--color-red), var(--color-red-active));
+  }
+
+  &.outlinedGreen {
+    @include buttonColor(var(--color-green), transparent, var(--color-green));
+    @include buttonStateOutlined(var(--color-green), var(--color-green-active));
+  }
+
+  &.outlinedBlue {
+    @include buttonColor(var(--color-blue), transparent, var(--color-blue));
+    @include buttonStateOutlined(var(--color-blue), var(--color-blue-active));
+  }
+
+  &.outlinedYellow {
+    @include buttonColor(var(--color-yellow), transparent, var(--color-yellow));
+    @include buttonStateOutlined(var(--color-yellow), var(--color-yellow-active));
+  }
+
+  &.outlinedGray {
+    @include buttonColor(var(--color-gray), transparent, var(--color-gray));
+    @include buttonStateOutlined(var(--color-gray), var(--color-gray-active));
+  }
+
+  @include buttonOutlinedDisabled;
+}
