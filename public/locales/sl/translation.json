@@ -8,9 +8,12 @@
     "description": "Skrivnostni tuneli energije po vesolju, fantastična in starodavna bitja, čarobni kristali, nenavadni planeti, prijatelji in sovražniki, dobro in zlo – po najbolj znanem čarovniku in najmočnejšem prstanu zdaj slovenska fantazijska knjiga."
   },
   "shared": {
-    "backToTop": "Na začetek"
+    "buyBook": "Kupi knjigo"
   },
   "pageNotFound": {
     "title": "Page Not Found"
+  },
+  "footer": {
+    "copyrights": "Vse pravice pridržane © Aljatera"
   }
 }

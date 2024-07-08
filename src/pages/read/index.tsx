@@ -1,5 +1,6 @@
 import { GetServerSideProps } from 'next';
 import ReadPage from '@/components/containers/ReadPage';
+import DefaultLayout from '@/components/layout/DefaultLayout/DefaultLayout';
 import { NextPageWithLayout } from '@/pages/_app';
 import { withTrans } from '@/utils/withTrans';
 
@@ -8,7 +9,7 @@ const Read: NextPageWithLayout = () => {
 };
 
 Read.getLayout = (page) => {
-  return <div>{page}</div>;
+  return <DefaultLayout>{page}</DefaultLayout>;
 };
 
 export const getServerSideProps: GetServerSideProps = withTrans(async () => {

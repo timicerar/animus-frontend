@@ -1,0 +1,14 @@
+@import 'src/styles';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-black);
+  height: $footer-height;
+
+  .copyrights {
+    @include typography-citation-4;
+    color: var(--color-white);
+  }
+}

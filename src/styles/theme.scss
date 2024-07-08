@@ -12,4 +12,10 @@ $breakpoints: (
 
 /* TRANSITION */
 $interaction-transition-duration: 200ms;
-$interaction-transition-timing-function: ease-in-out
+$interaction-transition-timing-function: ease-in-out;
+
+/* LAYOUT */
+$navbar-z-index: 1;
+$navbar-height: 80px;
+$footer-height: 64px;
+

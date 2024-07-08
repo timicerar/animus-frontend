@@ -1,0 +1,39 @@
+@import 'src/styles';
+
+.container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: $navbar-z-index;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: $navbar-height;
+  padding: 12px;
+
+  background: transparent;
+  transition: background 300ms;
+}
+
+.visible {
+  justify-content: space-between;
+  background: var(--color-black);
+}
+
+.sticky {
+  position: sticky;
+  justify-content: space-between;
+  background: var(--color-black);
+}
+
+.shop {
+  justify-content: flex-start;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
