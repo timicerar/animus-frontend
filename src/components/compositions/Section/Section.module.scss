@@ -1,0 +1,13 @@
+@import "src/styles";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  min-height: 640px;
+
+  @include mq('sm') {
+    padding: 24px;
+  }
+}

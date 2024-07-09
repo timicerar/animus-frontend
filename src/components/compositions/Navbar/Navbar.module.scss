@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  gap: 8px;
   width: 100%;
   height: $navbar-height;
   padding: 12px;
@@ -20,6 +21,10 @@
 .visible {
   justify-content: space-between;
   background: var(--color-black);
+
+  @include mq('xxs') {
+    justify-content: flex-end;
+  }
 }
 
 .sticky {
@@ -36,4 +41,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include mq('xxs') {
+    visibility: hidden;
+    display: none;
+  }
 }

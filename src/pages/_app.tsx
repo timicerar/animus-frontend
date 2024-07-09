@@ -15,6 +15,7 @@ import { ReactElement, ReactNode, useState } from 'react';
 import FacebookPixel from '@/components/components/FacebookPixel/FacebookPixel';
 import FontProvider from '@/components/providers/FontProvider/FontProvider';
 import NavbarProvider from '@/components/providers/NavbarProvider/NavbarProvider';
+import SectionProvider from '@/components/providers/SectionProvider/SectionProvider';
 import { Colors } from '@/constants/colors';
 
 export type NextPageWithLayout<P = Record<string, never>, IP = P> = NextPage<
@@ -52,28 +53,30 @@ function MyApp({
       <FontProvider>
         <HydrationBoundary state={pageProps.dehydratedState}>
           <NavbarProvider>
-            <NextNProgress
-              height={2}
-              options={{ showSpinner: false }}
-              color={Colors.RED}
-            />
-            <Head>
-              <title>{t('meta.title')}</title>
-              <meta name="description" content={t('meta.description')} />
-              <meta
-                name="viewport"
-                content="width=device-width, initial-scale=1"
+            <SectionProvider>
+              <NextNProgress
+                height={2}
+                options={{ showSpinner: false }}
+                color={Colors.RED}
               />
-            </Head>
-            {getLayout(<Component {...pageProps} />)}
-            {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
-              <GoogleAnalytics
-                gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}
-              />
-            )}
-            {process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID && (
-              <FacebookPixel id={process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID} />
-            )}
+              <Head>
+                <title>{t('meta.title')}</title>
+                <meta name="description" content={t('meta.description')} />
+                <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1"
+                />
+              </Head>
+              {getLayout(<Component {...pageProps} />)}
+              {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
+                <GoogleAnalytics
+                  gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}
+                />
+              )}
+              {process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID && (
+                <FacebookPixel id={process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID} />
+              )}
+            </SectionProvider>
           </NavbarProvider>
         </HydrationBoundary>
       </FontProvider>

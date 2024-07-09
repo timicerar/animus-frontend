@@ -1,0 +1,30 @@
+@import "src/styles";
+
+.section {
+  min-height: unset;
+
+  @include mq('sm') {
+    padding: 28px;
+  }
+}
+
+.video {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+  text-align: center;
+
+  .paragraph {
+    @include typography-paragraph;
+  }
+
+  .link {
+    @include typography-paragraph-bold;
+    @include typography-uppercase;
+
+    @include hover {
+      text-decoration: underline;
+    }
+  }
+}

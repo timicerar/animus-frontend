@@ -1,5 +1,5 @@
 import { GetServerSideProps } from 'next';
-import ReadPage from '@/components/containers/ReadPage';
+import ReadPage from '@/components/containers/ReadPage/ReadPage';
 import DefaultLayout from '@/components/layout/DefaultLayout/DefaultLayout';
 import { NextPageWithLayout } from '@/pages/_app';
 import { withTrans } from '@/utils/withTrans';

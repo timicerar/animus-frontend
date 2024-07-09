@@ -1,0 +1,23 @@
+@import "src/styles";
+
+.section {
+  min-height: unset;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+
+  @include mq('sm') {
+    gap: 24px;
+  }
+}
+
+.button {
+  @include mq('xs2') {
+    width: 100%;
+  }
+}

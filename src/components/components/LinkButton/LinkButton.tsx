@@ -1,12 +1,11 @@
 import classNames from 'classnames';
 import Link from 'next/link';
 import Button, { ButtonProps } from '@/components/components/Button/Button';
-import { Route } from '@/constants/routes';
 import useGetButtonColorClass from '@/hooks/useGetButtonColorClass';
 import classes from '@/styles/shared/Button.module.scss';
 
-type LinkButtonProps = {
-  href: Route;
+export type LinkButtonProps = {
+  href: string;
 } & Omit<ButtonProps, 'onClick'>;
 
 const LinkButton = ({
@@ -15,13 +14,20 @@ const LinkButton = ({
   color = 'Black',
   fullWidth = false,
   disabled = false,
+  className,
   children,
 }: LinkButtonProps) => {
   const colorClass = useGetButtonColorClass(type, color);
 
   if (disabled) {
     return (
-      <Button type={type} color={color} fullWidth={fullWidth} disabled>
+      <Button
+        type={type}
+        color={color}
+        fullWidth={fullWidth}
+        className={className}
+        disabled
+      >
         {children}
       </Button>
     );
@@ -37,7 +43,8 @@ const LinkButton = ({
           [classes.buttonOutlined]: type === 'Outlined',
           [classes.fullWidth]: fullWidth,
         },
-        colorClass
+        colorClass,
+        className
       )}
     >
       {children}

@@ -1,5 +1,5 @@
 import { GetServerSideProps } from 'next';
-import FindOutPage from '@/components/containers/FindOutPage';
+import FindOutPage from '@/components/containers/FindOutPage/FindOutPage';
 import DefaultLayout from '@/components/layout/DefaultLayout/DefaultLayout';
 import { NextPageWithLayout } from '@/pages/_app';
 import { withTrans } from '@/utils/withTrans';

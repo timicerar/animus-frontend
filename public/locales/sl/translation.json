@@ -8,7 +8,75 @@
     "description": "Skrivnostni tuneli energije po vesolju, fantastična in starodavna bitja, čarobni kristali, nenavadni planeti, prijatelji in sovražniki, dobro in zlo – po najbolj znanem čarovniku in najmočnejšem prstanu zdaj slovenska fantazijska knjiga."
   },
   "shared": {
-    "buyBook": "Kupi knjigo"
+    "buyBook": "Kupi knjigo",
+    "askUs": "Vprašaj nas",
+    "backToTop": "Na začetek",
+    "toHomePage": "Na prvo stran",
+    "infoEmail": "info@aljatera.com"
+  },
+  "homePage": {
+    "sections": {
+      "1": {
+        "paragraph": "Nekje med Gospodarjem prstanov in Harryjem Potterjem najdemo svet Animusa - slovensko knjižno trilogijo",
+        "link": "Video napovednik",
+        "videoUrl": "https://www.youtube.com/watch?v=iaQBfaprdDI"
+      },
+      "2": {
+        "title": "Next level top shit!",
+        "paragraph": "“Brez filozofiranja, vesolje direkt v žilo!”",
+        "author": "Buda",
+        "button": "Izvedi več"
+      },
+      "3": {
+        "title": "Besede avtorja",
+        "paragraph": "»Ustvarjanje Animusa je zame nepozabno doživetje. Zgodba je napisana in jaz že vem, kaj je Animus, bralci pa boste izvedeli v zadnjem delu trilogije. Z Galom, Klarejo in drugimi preživljam že četrto leto in že zdaj se zavedam, kako močno jih bom pogrešal, ko bodo nehali biti del mojega ustvarjalnega procesa. Druga knjiga je nadgradnja prve in po besedah prvih bralcev je še boljša in še bolj primerna tudi za odrasle bralce.«"
+      },
+      "4": {
+        "title": "Nič ni tako, kot je videti!",
+        "paragraph": "“Mislil sem, da imam vse odgovore, ampak ko sem prebral Animus...”",
+        "author": "Jezus",
+        "button": "Preberi"
+      },
+      "5": {
+        "title": "Svet animusa",
+        "subsections": {
+          "1": {
+            "title": "Vesoljni ep",
+            "paragraph": "Ni  Dune, ni Lord of the Rings, je pa nepozaben."
+          },
+          "2": {
+            "title": "Starodavna bitja",
+            "paragraph": "Zmaji so že ful prežvečeni, zato imamo v Animusu starodavna bitja."
+          },
+          "3": {
+            "title": "Prividi ali magija",
+            "paragraph": "Vse, kar si lahko ljudje zamislimo, je tako ali drugače resnično."
+          },
+          "4": {
+            "title": "Dialogi",
+            "paragraph": "Da se odstavki ne bodo preveč vlekli, so tukaj filmski dialogi."
+          },
+          "5": {
+            "title": "Najbolj kul lokacije",
+            "paragraph": "Tako živi opisi krajev, trdnjav in mest, da se ti zdi, kot da si tam."
+          },
+          "6": {
+            "title": "Povezava",
+            "paragraph": "May the force be with you, so rekli bolj pametni od nas."
+          }
+        }
+      },
+      "6": {
+        "title": "Ne jemlji se resno!",
+        "paragraph": "“Najboljši nasvet ever! Hvala Animus.”",
+        "author": "Mohamed",
+        "button": "Kr nekaj"
+      },
+      "7": {
+        "paragraph": "»Ustvarjanje Animusa je zame nepozabno doživetje. Zgodba je napisana in jaz že vem, kaj je Animus, bralci pa boste izvedeli v zadnjem delu trilogije. Z Galom, Klarejo in drugimi preživljam že četrto leto in že zdaj se zavedam, kako močno jih bom pogrešal, ko bodo nehali biti del mojega ustvarjalnega procesa. Druga knjiga je nadgradnja prve in po besedah prvih bralcev je še boljša in še bolj primerna tudi za odrasle bralce.«",
+        "author": "FILIP KRANJC, 13 let"
+      }
+    }
   },
   "pageNotFound": {
     "title": "Page Not Found"

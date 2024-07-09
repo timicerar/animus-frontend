@@ -13,7 +13,25 @@ const usePageLocation = () => {
     return pathname?.includes(Routes.SHOP);
   }, [pathname]);
 
-  return { isHomePage, isShopPage };
+  const isReadPage = useMemo(() => {
+    return pathname?.includes(Routes.READ);
+  }, [pathname]);
+
+  const isFindOutPage = useMemo(() => {
+    return pathname?.includes(Routes.FIND_OUT);
+  }, [pathname]);
+
+  const isIllustrationsPage = useMemo(() => {
+    return pathname?.includes(Routes.ILLUSTRATIONS);
+  }, [pathname]);
+
+  return {
+    isHomePage,
+    isShopPage,
+    isReadPage,
+    isFindOutPage,
+    isIllustrationsPage,
+  };
 };
 
 export default usePageLocation;

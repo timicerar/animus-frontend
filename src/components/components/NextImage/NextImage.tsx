@@ -21,12 +21,11 @@ const NextImage = ({
       quality={100}
       {...props}
       alt={props?.alt}
-      className={classNames(className, classes.nextImage)}
+      className={classNames(classes.nextImage, className)}
       style={{
-        objectFit: 'contain',
         ...props?.style,
-        maxWidth: `${maxWidth}px`,
-        maxHeight: `${maxHeight}px`,
+        maxWidth: maxWidth ? `${maxWidth}px` : undefined,
+        maxHeight: maxHeight ? `${maxHeight}px` : undefined,
       }}
     />
   );

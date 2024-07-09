@@ -60,10 +60,15 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0 4px 4px;;
 }
 
-@mixin buttonColor($color, $background, $borderColor) {
+@mixin buttonColor($color, $background, $border-color) {
   color: $color;
   background: $background;
-  border: 2px solid $borderColor;
+
+  @if $border-color != null {
+    border: 2px solid $border-color;
+  } @else {
+    border: 0;
+  }
 }
 
 @mixin buttonPrimaryDisabled {

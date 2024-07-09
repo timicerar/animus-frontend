@@ -1,14 +1,14 @@
 import { GetServerSideProps } from 'next';
-import LearnPage from '@/components/containers/LearnPage';
+import IllustrationsPage from '@/components/containers/IllustrationsPage/IllustrationsPage';
 import DefaultLayout from '@/components/layout/DefaultLayout/DefaultLayout';
 import { NextPageWithLayout } from '@/pages/_app';
 import { withTrans } from '@/utils/withTrans';
 
-const Learn: NextPageWithLayout = () => {
-  return <LearnPage />;
+const Illustrations: NextPageWithLayout = () => {
+  return <IllustrationsPage />;
 };
 
-Learn.getLayout = (page) => {
+Illustrations.getLayout = (page) => {
   return <DefaultLayout>{page}</DefaultLayout>;
 };
 
@@ -18,4 +18,4 @@ export const getServerSideProps: GetServerSideProps = withTrans(async () => {
   };
 });
 
-export default Learn;
+export default Illustrations;

@@ -13,6 +13,7 @@ export type ButtonColor =
   | 'Gray';
 
 export type ButtonProps = {
+  className?: string;
   type?: ButtonType;
   color?: ButtonColor;
   disabled?: boolean;
@@ -26,6 +27,7 @@ const Button = ({
   disabled = false,
   fullWidth = false,
   onClick,
+  className,
   children,
 }: ButtonProps) => {
   const colorClass = useGetButtonColorClass(type, color);
@@ -41,7 +43,8 @@ const Button = ({
           [classes.buttonOutlined]: type === 'Outlined',
           [classes.fullWidth]: fullWidth,
         },
-        colorClass
+        colorClass,
+        className
       )}
     >
       {children}

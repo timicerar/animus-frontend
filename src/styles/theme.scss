@@ -1,5 +1,6 @@
 /* Breakpoints */
 $breakpoints: (
+  'xxs': 356,
   'xs': 480,
   'xs2': 568,
   'sm': 768,
@@ -15,7 +16,10 @@ $interaction-transition-duration: 200ms;
 $interaction-transition-timing-function: ease-in-out;
 
 /* LAYOUT */
-$navbar-z-index: 1;
+$navbar-z-index: 10;
 $navbar-height: 80px;
 $footer-height: 64px;
+
+/* BANNER */
+$banner-max-width: 1000px;
 
