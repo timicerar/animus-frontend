@@ -34,7 +34,7 @@ const Navbar = () => {
         </Link>
       )}
       {!isShopPage && (
-        <LinkButton href={Routes.SHOP} color="Red" className={classes.button}>
+        <LinkButton href={Routes.SHOP} color="Red">
           {t('shared.buyBook')}
         </LinkButton>
       )}
