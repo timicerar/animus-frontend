@@ -1,0 +1,59 @@
+@import "src/styles";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 64px;
+  width: 100%;
+  max-width: $quote-max-width;
+
+  @include mq('sm') {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  &.gap {
+    gap: 8px;
+  }
+}
+
+.imageWrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.image {
+  aspect-ratio: 1/1;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  @include mq('sm') {
+    width: 256px;
+    height: 256px;
+  }
+}
+
+.title {
+  @include typography-citation-bold;
+  @include typography-uppercase;
+  text-align: left;
+}
+
+.paragraph {
+  @include typography-citation-2;
+  text-align: left;
+}
+
+.author {
+  @include typography-citation-2;
+  text-align: right;
+}

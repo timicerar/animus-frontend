@@ -1,0 +1,47 @@
+@import "src/styles";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: $grid-max-width;
+  gap: 32px;
+}
+
+.heading {
+  @include typography-h1-normal;
+  @include typography-uppercase;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 64px;
+
+  @include mq('md') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mq('xs2') {
+    grid-template-columns: 1fr;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  .title {
+    @include typography-citation-bold;
+    @include typography-uppercase;
+    text-align: center;
+  }
+
+  .paragraph {
+    @include typography-citation;
+    text-align: center;
+  }
+}

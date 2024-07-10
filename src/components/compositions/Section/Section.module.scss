@@ -8,6 +8,6 @@
   min-height: 640px;
 
   @include mq('sm') {
-    padding: 24px;
+    padding: 64px 32px;
   }
 }

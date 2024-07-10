@@ -2,6 +2,10 @@
 
 .section {
   min-height: unset;
+
+  @include mq('sm') {
+    padding: 24px;
+  }
 }
 
 .container {
