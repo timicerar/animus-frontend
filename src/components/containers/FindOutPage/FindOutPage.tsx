@@ -90,7 +90,6 @@ const FindOutPage = () => {
             paragraph: t('findOutPage.sections.2.paragraph'),
             author: t('findOutPage.sections.2.author'),
           }}
-          maxWidth={1200}
         />
       </Section>
       <Section>
