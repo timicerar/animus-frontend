@@ -12,7 +12,15 @@ import classes from './BottomBanner.module.scss';
 const BottomBanner = () => {
   const { t } = useTranslation();
   const window = useWindow();
-  const { isHomePage } = usePageLocation();
+  const { isHomePage, isReadPage } = usePageLocation();
+
+  const backgroundColor = useMemo(() => {
+    if (isReadPage) {
+      return Colors.WHITE;
+    } else {
+      return Colors.BACKGROUND;
+    }
+  }, [isReadPage]);
 
   const handleBackToTop = useCallback(() => {
     if (!window) return;
@@ -70,7 +78,7 @@ const BottomBanner = () => {
   }, [handleBackToTop, isHomePage, t]);
 
   return (
-    <Section className={classes.section} backgroundColor={Colors.BACKGROUND}>
+    <Section className={classes.section} backgroundColor={backgroundColor}>
       <div className={classes.container}>{content}</div>
     </Section>
   );

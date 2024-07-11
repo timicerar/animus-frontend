@@ -1,13 +1,11 @@
 import { GetStaticProps } from 'next';
-import { useTranslation } from 'next-i18next';
 import { i18n } from 'next-i18next.config';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import NotFoundPage from '@/components/containers/NotFoundPage/NotFoundPage';
 import { NextPageWithLayout } from './_app';
 
 const Custom404: NextPageWithLayout = () => {
-  const { t } = useTranslation();
-
-  return <>{t('pageNotFound.title')}</>;
+  return <NotFoundPage />;
 };
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
