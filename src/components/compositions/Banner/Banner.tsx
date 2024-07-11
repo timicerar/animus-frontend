@@ -11,11 +11,12 @@ type BannerProps = {
     author: string;
   };
   button?: LinkButtonProps;
+  maxWidth?: number;
 };
 
-const Banner = ({ title, citation, button }: BannerProps) => {
+const Banner = ({ title, citation, button, maxWidth }: BannerProps) => {
   return (
-    <div className={classes.container}>
+    <div className={classes.container} style={{ maxWidth }}>
       <div className={classes.wrapper}>
         <h2 className={classes.title}>{title}</h2>
         <div>

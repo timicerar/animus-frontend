@@ -1,4 +1,6 @@
 import { useTranslation } from 'next-i18next';
+import AnimusBackgroundHero from 'public/images/animus_background_hero.png';
+import AnimusHero from 'public/images/animus_hero.png';
 import IllustrationsBackground from 'public/images/illustrations_background.png';
 import LearnMoreBackground from 'public/images/learn_more_background.png';
 import FilipImage from 'public/images/people/filip.png';
@@ -23,7 +25,7 @@ const HomePage = () => {
 
   return (
     <>
-      <HeroImage />
+      <HeroImage backgroundImage={AnimusBackgroundHero} image={AnimusHero} />
       <VideoBanner />
       <Section
         id={Sections.FIND_OUT_SECTION_ID}

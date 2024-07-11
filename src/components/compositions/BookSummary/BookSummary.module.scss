@@ -1,0 +1,44 @@
+@import "src/styles";
+
+.container {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  max-width: $paragraph-max-width;
+
+  &.left {
+    grid-template-columns: auto 1fr;
+    gap: 48px;
+
+    @include mq('md') {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      grid-template-columns: unset;
+    }
+  }
+
+  &.right {
+    grid-template-columns: 1fr auto;
+    gap: 48px;
+
+    @include mq('md') {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 32px;
+      grid-template-columns: unset;
+    }
+  }
+}
+
+.content {
+  @include typography-paragraph;
+  text-align: left;
+}
+
+.image {
+  object-fit: contain;
+  width: 100%;
+  max-width: 380px;
+  height: fit-content;
+}

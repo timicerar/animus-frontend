@@ -3,6 +3,7 @@ import { useCallback, useMemo } from 'react';
 import Button from '@/components/components/Button/Button';
 import LinkButton from '@/components/components/LinkButton/LinkButton';
 import Section from '@/components/compositions/Section/Section';
+import { Colors } from '@/constants/colors';
 import { Routes } from '@/constants/routes';
 import usePageLocation from '@/hooks/usePageLocation';
 import useWindow from '@/hooks/useWindow';
@@ -69,7 +70,7 @@ const BottomBanner = () => {
   }, [handleBackToTop, isHomePage, t]);
 
   return (
-    <Section className={classes.section}>
+    <Section className={classes.section} backgroundColor={Colors.BACKGROUND}>
       <div className={classes.container}>{content}</div>
     </Section>
   );

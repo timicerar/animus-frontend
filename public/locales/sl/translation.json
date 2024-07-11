@@ -79,6 +79,35 @@
       }
     }
   },
+  "findOutPage": {
+    "pageTitle": "Kaj je animus?",
+    "sections": {
+      "1": {
+        "paragraphs": {
+          "1": "Če hočeš izvedeti, kaj je Animus, moraš prebrati vse tri knjige. Samo kakšnih 800 strani... ampak je ful ilustracij in tekst ni postavljen preveč na gosto, tako da gre zlahka. In dogaja se. Na polno.  Nikoli ni dolgčas. Filmsko. Osnovna zgodba je mladinska fantazijska pustolovščina, zgodba o odraščanju, ki bralca potegne vase. Pod to pa se skriva še en sloj, takšen bolj filozofsko-duhovni-razmišljujoč, ta je v fantazijo zavita avtobiografija.",
+          "2": "Bolj kot liki odraščajo, bolj zrela postaja zgodba, težje odločitve, ki jih sprejemajo junaki, in hujše posledice njihovih dejanj. Ljubezen, prijateljstvo, pogum, žrtvovanje, ponižnost, prepuščanje, smrt in življenje.",
+          "3": "V prvi knjigi se Gal s svojimi prijatelji Mojco, Miho in Vasjo znajde na planetu Aljatera. Kmalu spoznajo, da v tem novem svetu nič ni tako, kot je videti. Srečujejo se s fantastičnimi bitji, dobrimi in zlimi ali pa takšnimi, ki so videti eno, a se izkaže, da so nekaj povsem drugega.",
+          "4": "To je knjiga o odraščanju, iskanju ljubezni in iskanju resnice v nepoznanem vesolju, ki bi se lahko imenovalo tudi Življenje. Gal in njegovi prijatelji morajo čez vrsto preizkušenj, med katerimi so na kocki njihova življenja, prijateljstvo in cel planet. Gal najde svojo mamo, za katero je mislil, da je umrla in sestro, za katero niti ni vedel, da obstaja.",
+          "5": "Prebijejo se do zadnjega spopada z Nevidno roko, v katerem jim Gal s spretno potezo prinese zmago in vrnejo se na Zemljo. Toda, ali je poteza res bila prava?",
+          "6": "Druga knjiga se začne točno tam, kjer se je prva končala. Gal pride na planet Trutina, kjer dneve preživlja v divjini in z učiteljevo pomočjo trenira svoje sposobnosti. Njegova zgodba (v kateri se kmalu snide s svojimi tremi prijatelji) se prepleta z drugo, ki se dogaja na Aljateri.",
+          "7": "Tam se stari znanci Klareja, Latra, Magafeli in drugi, ki so se jim pridružili novi obrazi, borijo proti stragom, zlu, ki je zavladalo planetu. Srečamo se z novimi, velikokrat še bolj nenavadnimi bitji in vsa igrajo svoje vloge v igri, ki vodi do Animusa.",
+          "8": "Seveda se izkaže, da tudi tokrat nič ni tako, kot je videti. Gal pravi: »Do zdaj sem spoznal tri stvari. Vesolje je polno življenja. Moja duša je enako stara kot vse ostale. Vse je povezano. No, pa še eno. Ravnotežje med svetlobo in temo je porušeno.",
+          "9": "Tretja knjiga je polna presenečenj. Vse, kar se je dogajalo v prvih dveh, je šele v tej postavljeno v pravo luč. Razkrije se ozadje likov, odnosov, dogodkov, končno izvemo resnico, ki se je do sedaj skrivala v iluziji sveta senc. Ni teme, ni svetlobe, vse samo je.",
+          "10": "Kaj dosti o vsebini ne moremo razkriti, saj je vsako poglavje nabito z neverjetnimi razkritji. Je pa ta del potovanje globoko v Galovo notranjost in hkrati izlet v širjave našega in tudi drugih vesolij ter dimenzij. Sloj za slojem se prebijamo do resnične človekove narave in njegovega poslanstva v tem življenju.",
+          "11": "In na koncu izvemo resnico."
+        }
+      },
+      "2": {
+        "title": "KO IZGINEJO OVIRE FIZIČNEGA SVETA, TUDI NE-BO NI VEČ MEJA.",
+        "paragraph": "“Animus je zgodba o nadčloveku onstran dobrega in zlega.”",
+        "author": "Nietzsche"
+      },
+      "3": {
+        "paragraph": "»Iz mladinskih knjig so v stotih letih izginili pastirji in pestrne, kurirčki in pionirji, tudi gusarji in stezosledci, zamenjali pa so jih tehnične pošasti ter bistri in drzni sodobni dečki in deklice, ki se znajo preleviti tudi v bojevnike, fantastične letalce in v svojevrstne slovenske batmane...«",
+        "author": "TONE PARTLJIČ, 80 let"
+      }
+    }
+  },
   "pageNotFound": {
     "title": "Page Not Found"
   },

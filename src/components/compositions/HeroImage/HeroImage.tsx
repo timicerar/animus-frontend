@@ -1,19 +1,32 @@
-import AnimusBackgroundHero from 'public/images/animus_background_hero.png';
-import AnimusHero from 'public/images/animus_hero.png';
+import classNames from 'classnames';
+import { StaticImageData } from 'next/image';
 import NextImage from '@/components/components/NextImage/NextImage';
 import Section from '@/components/compositions/Section/Section';
 import classes from './HeroImage.module.scss';
 
-const HeroImage = () => {
+type HeroImageProps = {
+  classes?: {
+    section?: string;
+    image?: string;
+  };
+  backgroundImage: StaticImageData;
+  image: StaticImageData;
+};
+
+const HeroImage = ({
+  backgroundImage,
+  image,
+  classes: styles,
+}: HeroImageProps) => {
   return (
     <Section
-      className={classes.container}
-      backgroundImage={AnimusBackgroundHero}
+      className={classNames(classes.container, styles?.section)}
+      backgroundImage={backgroundImage}
     >
       <NextImage
-        src={AnimusHero}
-        alt="animus-hero-image"
-        className={classes.image}
+        src={image}
+        alt="hero-image"
+        className={classNames(classes.image, styles?.image)}
       />
     </Section>
   );
