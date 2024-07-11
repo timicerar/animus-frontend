@@ -1,0 +1,23 @@
+@import "src/styles";
+
+.pageTitleSection {
+  min-height: unset;
+
+  @include mq('sm') {
+    padding: 28px;
+  }
+
+  .title {
+    @include typography-h1-bold;
+    @include typography-uppercase;
+    text-align: center;
+  }
+}
+
+.bookSection {
+  justify-content: flex-start;
+  flex-direction: column;
+  min-height: unset;
+  gap: 32px;
+  padding: 64px 32px;
+}

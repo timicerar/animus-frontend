@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import { StaticImageData } from 'next/image';
+import { ReactNode } from 'react';
 import NextImage from '@/components/components/NextImage/NextImage';
 import classes from './QuoteCard.module.scss';
 
@@ -7,7 +8,7 @@ type QuoteCardProps = {
   quote: {
     image?: StaticImageData;
     title?: string;
-    paragraph: string;
+    paragraph: ReactNode;
     author?: string;
   };
 };
