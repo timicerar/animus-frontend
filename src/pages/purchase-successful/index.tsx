@@ -6,16 +6,16 @@ import { Routes } from '@/constants/routes';
 import { NextPageWithLayout } from '@/pages/_app';
 import { withTrans } from '@/utils/withTrans';
 
-const ShopSuccess: NextPageWithLayout = () => {
+const PurchaseSuccessful: NextPageWithLayout = () => {
   return (
     <>
-      <Head route={Routes.SHOP_SUCCESS} />
+      <Head route={Routes.PURCHASE_SUCCESSFUL} />
       <PurchaseSuccessfulPage />
     </>
   );
 };
 
-ShopSuccess.getLayout = (page) => {
+PurchaseSuccessful.getLayout = (page) => {
   return <DefaultLayout>{page}</DefaultLayout>;
 };
 
@@ -25,4 +25,4 @@ export const getServerSideProps: GetServerSideProps = withTrans(async () => {
   };
 });
 
-export default ShopSuccess;
+export default PurchaseSuccessful;

@@ -281,6 +281,10 @@
       "termsAndConditions": "Prebral sem <linkComponent>splošne pogoje poslovanja</linkComponent> in se z njimi strinjam."
     }
   },
+  "purchaseSuccessPage": {
+    "pageTitle": "Hvala za nakup",
+    "paragraph": "Upamo, da boš v branju knjige resnično užival!"
+  },
   "termsAndConditionsPage": {
     "pageTitle": "Splošni pogoji<breakPoint />poslovanja",
     "sections": {

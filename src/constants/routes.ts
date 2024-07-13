@@ -2,7 +2,7 @@ export const Routes = {
   HOME: '/',
   SHOP: '/shop',
   SHOP_PRODUCT: '/shop/:product',
-  SHOP_SUCCESS: '/shop/success',
+  PURCHASE_SUCCESSFUL: '/purchase-successful',
   FIND_OUT: '/find-out',
   READ: '/read',
   ILLUSTRATIONS: '/illustrations',
