@@ -27,3 +27,13 @@ export const getShopProducts = (): ShopItemType[] => {
     },
   ];
 };
+
+export const isValidShopProductParam = (param: string) => {
+  if (!param) {
+    return false;
+  }
+
+  const shopRoutes = Object.values(ShopRoutes);
+
+  return shopRoutes?.some((route) => route?.endsWith(param));
+};

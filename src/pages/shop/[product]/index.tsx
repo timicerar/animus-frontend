@@ -4,6 +4,7 @@ import ShopProductPage from '@/components/containers/ShopProductPage/ShopProduct
 import DefaultLayout from '@/components/layout/DefaultLayout/DefaultLayout';
 import { Routes } from '@/constants/routes';
 import { NextPageWithLayout } from '@/pages/_app';
+import { isValidShopProductParam } from '@/utils/shopUtils';
 import { withTrans } from '@/utils/withTrans';
 
 const ShopProduct: NextPageWithLayout = () => {
@@ -19,10 +20,22 @@ ShopProduct.getLayout = (page) => {
   return <DefaultLayout>{page}</DefaultLayout>;
 };
 
-export const getServerSideProps: GetServerSideProps = withTrans(async () => {
-  return {
-    props: {},
-  };
-});
+export const getServerSideProps: GetServerSideProps = withTrans(
+  async ({ params }) => {
+    if (!isValidShopProductParam(params?.product as string)) {
+      return {
+        redirect: {
+          statusCode: 307,
+          destination: Routes.SHOP,
+        },
+        props: {},
+      };
+    }
+
+    return {
+      props: {},
+    };
+  }
+);
 
 export default ShopProduct;
