@@ -15,9 +15,12 @@
 }
 
 .bookSection {
+  display: flex;
+  align-items: center;
   justify-content: flex-start;
   flex-direction: column;
   min-height: unset;
   gap: 32px;
   padding: 64px 32px;
 }
+

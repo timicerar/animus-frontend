@@ -1,7 +1,10 @@
 {
   "routes": {
-    "home": "Domov",
-    "shop": "Trgovina"
+    "home": "Animus | Domov",
+    "shop": "Animus | Trgovina",
+    "findOut": "Animus | Izvedi več",
+    "read": "Animus | Preberi",
+    "illustrations": "Animus | Ilustracije"
   },
   "meta": {
     "title": "Animus",
@@ -12,6 +15,8 @@
     "askUs": "Vprašaj nas",
     "backToTop": "Na začetek",
     "toHomePage": "Na prvo stran",
+    "readMore": "Preberi več",
+    "readLess": "Skrij",
     "infoEmail": "info@aljatera.com"
   },
   "homePage": {
@@ -114,7 +119,20 @@
       "1": {
         "bookTitle": "Prvi del: V svetu senc",
         "paragraphs": {
-          "1": ""
+          "1": "Tako se istočasno, ko prvi pešaki dosežejo trdna, s koreninami prepredena tla in se poskušajo v redu razvrstiti med debelimi lesnimi žilami, začnejo ob straneh zlivati v gozd podivjane porkumukije s črnimi jezdeci. Od dreves na vse strani butne nov val migotavega zraka, ki sproži glasno pokanje in škrtanje in lomljenje; korenine se začnejo premikati kot debeli mesnati črvi, ki zapirajo pot napadalcem, jih stiskajo z vseh strani, vlačijo po tleh in mnoge od njih zadržijo ujete pod seboj.",
+          "2": "»Zakaj je Narava na njihovi strani?« Mojca izreče vprašanje, ki se mi je pravkar motalo po glavi, vendar ni časa za razmišljanje; če ne napademo, bo naša vojska izgubljena.",
+          "3": "»Zdaj!« glasno zakričim in močno spodbodem Prima, popustim vajeti, da se dvigne v zrak, in že po nekaj metrih jih znova zategnem, da se tesno ob pobočju začneva spuščati navzdol. Ob sebi bolj slutim kot vidim Klarejo z Ultimom, zadaj slišim udarce kril Tertije, Karta in Bete, na katerih jahajo moji prijatelji, med ostrimi švisti kril pa šumijo dolgi zamahi Aterja, ki se spušča za nami.",
+          "4": "Veter mi glasno buči okoli ušes in oči se mi tako močno solzijo, da se slike bitke z neznanim sovragom zlijejo v en sam zmazek. Z vajetmi poskušam Prima obdržati v smeri, kjer sem še malo prej videl iz gozda dvigajoče se puščice. Zdi se mi, da me bo vsak čas iztrgalo iz sedla, saj z vedno večjo hitrostjo letimo preko skal. Gozd je že tik pred nami, ko se iz krošenj dvigne velika skupina živali, podobnih našim ekvanom, ki pa so rjave barve in po prsih obarvane živordeče, kot bi se jim tja odtisnil strašen plamen.",
+          "5": "Takoj popustim vajeti in z levo roko močno potegnem, Primo se začne dvigati v ostrem zavoju in le za las zgrešiva dve zaporedni obrambni vrsti živali, ki lebdijo nad zelenjem, divje mahajo s krili in njihove ognjene prsi se napete obračajo k nam. Komaj švignem mimo, se nad gozdom razleže strašen udarec in zasliši se glasno pokanje, kot bi se kosti lomile pod visokim pritiskom.",
+          "6": "Glavo obrnem nazaj in vidim, da je Ater, ne da bi količkaj spremenil smer, priletel naravnost v sovražnikove letalce in zdaj se stisnjeni v nepregleden klobčič vsi skupaj premetavajo po zraku.Drugi smo se uspeli izogniti trčenju in se, raztreseni po nebu, odda- ljujemo vsak v svojo smer. Nekateri od branilcev so se spustili v pregon in dva drvita naravnost proti meni. Vajeti najprej zategnem, da se s Primom spustiva tik nad krošnje, ga večkrat močno stisnem s stegni in vlečem izmenično, zdaj v eno zdaj v drugo stran, tako da v ostrem cikcaku beživa pred zasledovalcema.",
+          "7": "Pod sabo zagledam širok pas trave, ki se razteza po celotni dolžini gozda in leži nekje na polovici poti med obronki pri reki in skalami, s katerimi se gozdni del zaključuje zgoraj. Drevesa so tam prekrita z lesenimi strukturami, ki segajo daleč nad travnik in so povezane z visečimi mostovi. Pod njimi ležijo polja in vrtovi ter večje in manjše stavbe, povsod so raztresene gruče bitij. Z lesenih teras pa je vame uprta množica puščic z napetih lokov, za katerimi stojijo z velikimi kapucami pokriti bojevniki.",
+          "8": "To je vse, kar lahko razberem med svojim hitrim preletom, ko že spet letim nad gostim gozdom in se hitro približujem delu, kjer se je naša vojska spopadla s koreninami. Divjemu begu navkljub sta me živali že skoraj ujeli, zato z rahlim stiskom nog znova spodbodem Prima, ki še poveča jakost in frekvenco udarcev s krili, tako da letiva že s prav nepredstavljivo hitrostjo.",
+          "9": "Ko pribučiva čez rob gozda, z druge strani reke proti nama poleti več dolgih črnih puščic; Primo se zavrti v ozki spirali, da bi se jim izognil, a močan sunek naju prevrne v zraku in eno od kril se zapre nad mano, tik preden z glasnim treskom priletiva ob tla. Pesek in trava v velikih kosih letita okoli mene, dokler se vse ne umiri in krilo, ki me je zaščitilo pred padcem, ne omahne navzdol. Premaknem ročico v sedlu ter se zvrnem v razrito zemljo, kjer lovim sapo, ki mi jo je vzel silni udarec.",
+          "10": "Zgoraj zagledam eno od živali, ki sta mi sledili, kako se s poškodovanim krilom dviga v zrak. Glasen švist razpara nebo in naslednji trenutek jo zadene nova puščica in takoj za tem še ena – mehka krila nič več ne izpodrivajo zraka in mrtev, zamolkel zvok se razleže od nje, ko udari ob tla.",
+          "11": "Nad mano se v vetru zavrtinči oblak prahu in prelije me groz¬ljiva tišina, nebo pa postaja vse temnejše. Čutim, da začenjam izgubljati zavest. Najraje bi se predal – temi bi pustil, da me odreši groze, ki me obdaja.",
+          "12": "Zaprem oči in nad sabo zagledam dedija, ki se mi spodbudno smehlja, ponosno kima z glavo in roko iztegne proti meni. Privzdignem se, da bi jo dosegel, in ko mu že skoraj sežem v dlan, se ta razblini, pred mano pa leži hropeči Primo.",
+          "13": "Dvignem se in skočim k njemu. V krilo ima zapičeno dolgo kopje, ki je povsem prepojeno z njegovo krvjo. Primem malo pod rebrasto ostjo in močno potegnem k sebi. Iz grla se mu izvije glasen krik bolečine, krilo pa, osvobojeno grozljivega tujka, prosto pade po tleh. Spustim se ob njega in se naslonim na njegov vrat.",
+          "14": "»Primo, dragi,« mu zašepetam. »Ne smeš umreti.« "
         }
       },
       "2": {
@@ -126,13 +144,85 @@
           "2": {
             "bookTitle": "Drugi del: Med svetlobo in temo",
             "paragraphs": {
-              "1": ""
+              "1": "Med opazovanjem lastne slike v vodi poskušam ugotoviti, kdo je ta fant, ki si me tako radovedno ogleduje, ko se za menoj nekaj zgane in v odsevu poleg sebe zagledam Amato. Že se hočem obrniti, a me zadrži z nežnim prijemom za ramo. Njene oči, ki iz tolmuna strmijo vame, me prikujejo na mesto.",
+              "2": "»Strame te'mek,« tiho reče. »Kvi'am.«",
+              "3": "Začutim, kako se laski iz njene dlani povežejo z mojo ramo in tok energije steče skozi mene in še naprej v vodo, ki rahlo vzvalovi od nenadne spremembe napetosti.",
+              "4": "»Čakaš,« zaslišim. »Noč je že skoraj tukaj, ti pa sediš in se nastavljaš zadnjim žarkom mrzlega sonca.«",
+              "5": "Dvignem pogled: sonci sta, čeprav skriti za temnim oblakom, še vedno visoko na nebu. Laski na ramenu me poščegetajo in ščemenje se širi po mojem hrbtu nižje in nižje.",
+              "6": "»Čigav obraz je ta, ki te opazuje,« nadaljuje Amata, »se sprašuješ … Izteka se dolgo obdobje ravnovesja med svetlobo in temo in kot že neštetokrat prej se bosta druga z drugo spopadli za prevlado. Sebe vidiš kot bojevnika svetlobe in verjameš, da moraš premagati tiste na strani teme.«",
+              "7": "Tolmun se napolni z oblaki dima. V globini zagledam močan sij, iz katerega se pojavijo črne sence – stragi.",
+              "8": "»Nihče nima v sebi samo teme ali samo svetlobe. Znotraj vsakega od nas je skrito torišče, na katerem nevidne sile merijo razmerje med obema. Hitro se lahko merilna skala prevesi v eno ali drugo stran.«",
+              "9": "Veter močneje zapiha, debla glasno zaječijo in gladina jezerca se razburka: odsev Amate postaja vse temnejši, mogočnejši, raste in raste in iz njenih oči zasije grozeča belina.",
+              "10": "»Nihče ni imun,« njen glas zlovešče zabobni čezme, »tema skrita čaka na svoj trenutek, in ko se ta pojavi, je nič ne ustavi. Ta nenehen tok se izteka šele v smrti.«",
+              "11": "Površina vode se umiri, veter utihne, kot bi ga nekdo ugasnil, grozljiva podoba gozdne vile pa se spet zmanjša – zažari v lahnem siju, zelenkasta svetloba iz oči izpodrine belino in tišina prekrije okoliški gozd.",
+              "12": "»Vendar tudi tisti, ki padejo v najbolj temne globine,« nadaljuje nežno, »še vedno lahko poiščejo luč in ji sledijo, vse dokler se znova ne rodijo v njej.«",
+              "13": "Za trenutek umolkne – njen odsev je spet skladen z njeno siceršnjo podobo. Zvoki gozda se povrnejo, voda glasno zažubori in vetrič se mi zasuče okoli glave.",
+              "14": "»Nisi bojevnik svetlobe,« reče s svojim glasom. »In ne teme. Zate ni strani, ni zaveznikov ne prijateljev. Pred koncem boš moral stati sam. Pridi z mano.«",
+              "15": "Ko to reče, jasa, gozd in jezerce izginejo v oblaku prahu, iz katerega se pojavi veliko večja jasa, in z Amato se znajdeva pod drevesom v centru Erudisa, na mestu, kamor ne sme nihče razen nje. Kot misel naju je prestavila na drug konec doline.",
+              "16": "»Tukaj bova počakala,« reče, ko poleg mene sede v travo pod drevesom.",
+              "17": "Ure minevajo, midva pa nepremično sediva drug ob drugem. Oblak je odplul naprej po svoji poti, ne da bi na naju odvrgel svoj tovor, sonci sta se prikazali izza njega in prav tako sledili svoji začrtani poti, ki ju je pripeljala že skoraj do belih vršacev. Tri jate ptic so v tem času visoko zgoraj preletele jaso in opazovalci so prihajali na rob gozda in se vračali nazaj v njegovo nedrje.",
+              "18": "Vse je teklo in teče, kot bi stvarstvo poganjal neviden mehanizem, ki se nikoli ne ustavi, znotraj katerega skrita sediva midva z Amato. Južni veter naju je prišel pozdravit in prinesel je novice iz svoje smeri: Mariimus so okupirali stragi, ki tam gradijo vojsko iz prebivalcev Trutine. Preiskujejo ped za pedjo in neumorno iščejo našo druščino – vse bližje in bližje so Eruditski dolini.",
+              "19": "Ko močnejše sonce, za katero zdaj vem, da ga Silvani imenujejo Kaldor, izgine za gorami, se okoli naju razlije mračna modrina. Manjša brleča krogla še vedno pluje po nebu in od gozda sem se zasliši hvalnica, ki se že tisočletja vsak večer dviga proti nebu, v zahvalo dnevu, ker je pevcem dovolil, da ga preživijo. Nebo je vse temnejše in med drevesi se proti jasi že plazi tema, medtem ko Kalur, modro sonce, zahaja za vrhovi.",
+              "20": "Z zadnjo svetlobo se poslovi tudi pesem in prve zvezde zasvetijo iz temote prostrane praznine, ki vlada med majhnimi otočki življenja. Tudi ta najmogočnejša bitja plujejo po nespremenljivi poti, ki jim je že davno bila začrtana od nekoga, ki ga nikoli ne bodo spoznale.",
+              "21": "Misli, ki jim komaj sledim in jih le stežka ali pa sploh ne razumem, od nekod pritekajo vame in vse bolj mi postaja jasno, da ne morem ničesar spremeniti.",
+              "22": "»Še enkrat se srečava, preden odideš,« se zdaj oglasi Amata. »Tri večere boš dočakal na našem planetu in po tretjem te čaka pomembna odločitev. Spoznati moraš, ali je ta že bila sprejeta zate. Poglej.«",
+              "23": "Ko to reče, se z roko dotakne mojega temena in znajdem se pred temačno jamo, katere vhod mi je od nekod močno znan. Zaslišim glasno sopihanje, za katerim se na plano prikaže tisti hudobni fant, ki se izdaja zame. Nasloni se na skalo ob vhodu in pogleda naravnost skozme; kot kaže nisem zares tam, saj me ne more videti.",
+              "24": "Žgoč pogled bega naokoli, kakor bi nekaj iskal po gozdu ali na nebu. Nenadoma se ustavi in še močneje zažari, zato se obrnem v tisto smer. Bleščeča razpoka se vije čez potemnelo nebo, od nje pa se proti nama spušča pet stragov. Pristanejo na travniku, ki leži med jamo in gozdom, in črni jezdeci razjahajo svoje živali.",
+              "25": "Hudobni fant se zravna. Mimo mene gre tako blizu, da bi se ga lahko dotaknil, vendar ob moji prisotnosti niti ne trzne. Spusti se po griču, ki vodi do mesta, kjer ga čakajo prišleki. Premaknem se bližje, da bi bolje videl, kaj se dogaja.",
+              "26": "Stopi k najvišjemu, to je tisti, katerega žival je med napadom pri Ortuzi bruhala uničujoč moder sij, in čeprav mu fant, ki je enako visok kot jaz, sega le malo višje od pasu, se velikan kar skrči od strahu.",
+              "27": "Moj dvojnik dvigne roko in ogromno telo pred njim se začne zvijati v strašnih krčih. Okoli njega se ovije oblak črnega dima in takrat fant roko dvigne še višje. Dim se steka proti njegovi dlani in okoli roke se mu kot kača plazi proti telesu, kjer izginja v prsih. Razleže se tuleč zvok bolečine, nakar se zadnji oblaček dima po roki odkotrlja navzdol in v notranjost, na mestu, kjer je še malo prej stal mogočni črni bojevnik, pa zazeva velika praznina.",
+              "28": "Fant nagne glavo, iz katere sršijo strašne bodice, in počasi zaokroži z njo, medtem ko spušča dvignjeno roko. Pogleda po preostalih jezdecih, ki so ponižno uklonili svoja kolena, nato pa stopi proti največji živali. Ta spusti svoj ogromni vrat in se mu pusti dotakniti predela nad gobcem – ob dotiku zaupljivo zapre veno¬mer odprte oči.",
+              "29": "Kot uročen strmim v sanjski prizor, ko se fant naenkrat obrne in svoje žareče oči zapiči naravnost vame. Ne morem se niti premakniti, samo gledam lahko, kako prihaja vse bližje in bližje. Roko dvigne proti moji glavi. Pred očmi se mi začne delati tema – zdi se mi, da me bo nekaj raztrgalo in posesalo vase.",
+              "30": "Oranžne oči začnejo izgubljati svoj strašljivi sij, ko se hkrati polnijo z zeleno barvo. Telo se mi sestavi nazaj v trdno celoto in tema izgine, pred seboj pa spet zagledam Amatin obraz. Roko odmakne z moje glave in jo spusti v svoje krilo.",
+              "31": "»Pojdi zdaj,« mi reče, in še preden ji uspem karkoli odgovoriti, izgine v oblaku svetlega dima, iz katerega se skoraj istočasno pojavijo tolmun, jasa in gozd. Moje noge bingljajo čez rob skale, brodijo po hladni vodi in moj obraz me opazuje z gladine, v kateri se bleščijo zvezde nočnega neba."
             }
           },
           "3": {
             "bookTitle": "Tretji del: Ravnovesje",
             "paragraphs": {
-              "1": ""
+              "1": "»Čakal sem te,« zaslišim dobro znani glas.",
+              "2": "»Narus,« mi uide s kratkim izdihom presenečenja.",
+              "3": "Nekoliko stran sedi na velikem kamnu in opazuje peno, kako se dviga z gladine morja, vsakič ko se valovi razbijejo ob dolgih vrstah skal, postavljenih tik pred prepadom.",
+              "4": "»Kako si vedel, da bom prišel?« ga vprašam.",
+              "5": "»Ti si mi povedal,« reče. »Sedi,« pokaže na kamen poleg ¬svojega.",
+              "6": "Seveda se ne spomnim, da bi mu kdaj rekel kaj takega, ampak že zdavnaj sem se nehal čuditi nerazložljivemu, zato poslušno sedem na ponujeno mesto in čakam, da bo učitelj spregovoril.",
+              "7": "»Spremenil si se, odkar sva se nazadnje srečala,« reče.",
+              "8": "»Zakaj si odšel? Niti približno še nisva zaključila s treningom.«",
+              "9": "»Ali res?« me pogleda izpod čela. »Se ti zdi, da se je tvoje učenje zaključilo z mojim odhodom? Ali pa začelo z mojim prihodom?«",
+              "10": "»Zdaj tako ali tako ni več pomembno,« skomignem z rameni.",
+              "11": "»Zakaj ne?«",
+              "12": "»Odprli so se mi vsi spomini in na površje je priplavalo vse znanje, skrito v meni. Težko se bom naučil kaj novega.«",
+              "13": "»Hah,« zavzdihne Narus. »Tudi jaz sem prišel v obdobje, ko sem verjel, da sem se naučil vsega, kar se je naučiti dalo, in spoznal vse skrivnosti življenja. Zdelo se mi je, da ni nikogar boljšega od mene in da me nihče ne more ustaviti na poti do razodetja. Ta pijanost je trajala nekaj let, dokler se ni končala s padcem v globok prepad, iz katerega sem kasneje le stežka splezal.«",
+              "14": "»Žal mi je zate, ampak jaz nisem ti.«",
+              "15": "»Seveda ne,« vzklikne. »Bog ne daj. Ampak vsi gremo skozi iste stopnje. Dokler si živ, se ne moreš naučiti vsega. Védenje je prihranjeno za kasneje.«",
+              "16": "»Zakaj sva tukaj?« prekinem njegovo modrovanje. Ne odgovori mi takoj. Njegov pogled spet zastane na lomečih se valovih. Premakne se in z roko pogladi mah, prirasel na skale.",
+              "17": "»Da se pogovoriva,« reče nazadnje. »Kot dva stara prijatelja, ki se dolgo nista srečala. In zdaj potrebujeva nekaj časa, da spet najdeva tisti ritem, s katerim so nekdaj bili prežeti najini pogovori. Nerad priganjam stvari, ki zahtevajo svoj čas.«",
+              "18": "»Nimam časa, da bi čakal na ritem. Če mi nameravaš kaj povedati, začni.«",
+              "19": "»Hitro, hitro, najhitreje,« vzklikne. »Kljub vsemu znanju, o katerem govoriš, si tako zlahka pozabil, da k potrpežljivemu vse pride.«",
+              "20": "»Tudi konec vsega,« prikimam.",
+              "21": "»Tudi,« se strinja z mano, »ampak vsak konec je začetek. Spoznal si že, da obstoj ni premica, temveč krog.«",
+              "22": "»Zakaj se potem borimo?«",
+              "23": "»Da bi se nekaj naučili.«",
+              "24": "»Kaj?«",
+              "25": "»Kako se nehati boriti.«",
+              "26": "Nasmehne se mi s spodbudnim smehljajem in se spet zazre nad valove, ki z nespremenjenim ritmom udarjajo ob obalo. V daljavi se pod oblake prebija zlatorumena svetloba sončnih žarkov. V širokih pramenih se spuščajo nad morje, kjer se z žarečim leskom odbijajo od valovite gladine. Moč valov je začela upadati skupaj z vetrom in ta se z nežnimi sunki zaganja v naju, kot bi že povedal vse, kar nama je želel povedati, in se zdaj s tihimi klici poslavlja do našega naslednjega srečanja.",
+              "27": "»Ampak, če se nehamo boriti, smo izgubljeni,« rečem.",
+              "28": "»Mogoče pa se moramo najprej pogubiti, da bi se nato lahko našli. Umreti, da bomo živeli.«",
+              "29": "»To nima nobenega smisla,« odkimam z glavo. »Vse ves čas živi. Tudi skale,« udarim po kamnu, na katerem sedim, »ali pa nebo,« pokažem na vse temnejši nebesni svod. »Nič ne umre,« zatrdim in zastanem. »Razen črnega razkroja, ki požira vse okoli sebe,« pristavim. »Če se ta razširi, ne bo ostalo nič.«",
+              "30": "Narus spet molči in strmi v nebo poslavljajočega se dneva. Nekoliko stran od obale zagledam veliko jato galebov, ki spremlja ribiško ladjo, silhueto pred zlatim morjem. Dolgi stebriči se čez krmo iztegujejo nad vodo, v katero pada široka mreža. Šele zdaj se zares zavem, da sem spet na Zemlji. Po dolgem času se spomnim dedija in njegovih pripovedi, ki so se izkazale za preroške, saj je v njih napovedal marsikaj, kar se mi je zgodilo od tistega dne, ko smo v naši hišici na drevesu našli sijočo kroglo. Rad bi ga še enkrat srečal, preden se vse konča, a nimam časa za postranske stvari.",
+              "31": "»Koga si se spomnil?« me vpraša Narus.",
+              "32": "»Ni pomembno,« odkimam in se zastrmim v njegove oči. »Dedija,« vseeno dodam.",
+              "33": "»Naj te moč ne zavede,« reče Narus. »Nihče ne more obstati sam. Ne glede na to, kako se trenutno počutiš, bližnjih ne smeš odrivati od sebe. Samo v njih boš našel moč takrat, ko se bo povsod okoli tebe spustila tema, ko boš uklonil koleno in potolčen obležal na tleh.«",
+              "34": "»Zdi se mi, da so to samo slepila,« odmahnem z roko. »Spretna igra svetlobe, ki nam preprečuje, da bi se dokopali do resnice. Kot bi za vsem skupaj stal Famulov starejši brat,« se nasmehnem brez veselja.",
+              "35": "»Ne zaupaš mi več,« odkima Narus.",
+              "36": "Nekoliko pomolčim, medtem ko razmišljam o njegovih besedah. Prav ima, nisem več prepričan, da pozna resnico. Čutim njegovo moč in razsežnost njegovih spoznanj, a zdi se mi, da na koncu ni nič manj izgubljen od mene, le boljši je postal v prepričevanju samega sebe. Ali res ni nikogar, ki bi zares vedel, pomislim.",
+              "37": "»Vedno si mi govoril, da moram verjeti,« rečem. »Verjeti nečemu ali nekomu … ampak jaz hočem vedeti.«",
+              "38": "»To življenje ni namenjeno temu,« spet počasi odkima. »Ničesar ne moremo vedeti zagotovo. Zato je vera tako pomembna. Ne smeš nehati verjeti. Lahko podvomiš. Lahko poiščeš nov izvor svoje vere, ampak nikoli ne smeš nehati verjeti. Vse dokler se popolnoma ne prepustiš, boš izgubljen.«",
+              "39": "»Če je to res, potem tudi ti ne moreš vedeti in torej ni razloga, da bi ti verjel.«",
+              "40": "»Ničesar ti mi ni treba verjeti. Svojo pot moraš najti sam.«",
+              "41": "»Še vedno mi nisi odgovoril, zakaj sva tukaj.«",
+              "42": "Pod najbolj oddaljenim oblakom se razlije oranžen sij in le nekaj trenutkov kasneje se tam pojavi žareča krogla, ki se počasi spušča proti zdaj že povsem mirnemu morju. Ribiči so v širokem krogu zaokrožili proti obali in se vračajo nazaj po svoji poti, medtem pa zadnji ostanki rahlega vetriča do mene prinašajo ostre krike galebov med prepirom za večerjo.",
+              "43": "Spomnim se zgodbe, ki mi jo je iz oguljene knjižice večkrat bral dedi; govorila je o galebu, drugačnem od jate – ni se hotel tepsti za hrano, želel se je izpopolnjevati v letenju in zato je bil izgnan. Toda on je na koncu našel svoj smisel, vendar se ne morem več spomniti, kakšen je ta smisel bil."
             }
           }
         }

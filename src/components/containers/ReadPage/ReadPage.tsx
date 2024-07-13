@@ -1,5 +1,8 @@
 import { Trans, useTranslation } from 'next-i18next';
 import MasaImage from 'public/images/people/masa.png';
+import FirstBook from '@/components/compositions/BookSection/FirstBook';
+import SecondBook from '@/components/compositions/BookSection/SecondBook';
+import ThirdBook from '@/components/compositions/BookSection/ThirdBook';
 import QuoteCard from '@/components/compositions/QuoteCard/QuoteCard';
 import Section from '@/components/compositions/Section/Section';
 import { Colors } from '@/constants/colors';
@@ -21,7 +24,9 @@ const ReadPage = () => {
       <Section
         className={classes.bookSection}
         backgroundColor={Colors.BACKGROUND}
-      ></Section>
+      >
+        <FirstBook />
+      </Section>
       <Section>
         <QuoteCard
           quote={{
@@ -34,7 +39,10 @@ const ReadPage = () => {
       <Section
         className={classes.bookSection}
         backgroundColor={Colors.BACKGROUND}
-      ></Section>
+      >
+        <SecondBook />
+        <ThirdBook />
+      </Section>
     </>
   );
 };

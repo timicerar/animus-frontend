@@ -1,0 +1,45 @@
+@import "src/styles";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: $book-section-max-width;
+}
+
+.title {
+  @include typography-h3-bold;
+  @include typography-uppercase;
+}
+
+.paragraph {
+  @include typography-paragraph;
+  text-align: justify;
+  text-indent: 32px;
+}
+
+.readMoreLess {
+  @include typography-paragraph;
+  color: var(--color-gray-dark);
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 4px;
+
+  @include hover {
+    text-decoration: underline;
+  }
+
+  @include mq('xs') {
+    text-decoration: underline;
+  }
+}
+
+.image {
+  object-fit: contain;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 12px;
+  vertical-align: bottom;
+}

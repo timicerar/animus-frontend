@@ -30,6 +30,13 @@
   font-size: 40px;
 }
 
+@mixin typography-h3-bold {
+  @include default-font-family;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+}
+
 @mixin typography-h1-normal {
   @include default-font-family;
   font-style: normal;
