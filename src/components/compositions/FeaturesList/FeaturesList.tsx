@@ -1,19 +1,19 @@
 import { StaticImageData } from 'next/image';
 import NextImage from '@/components/components/NextImage/NextImage';
-import classes from './GridItems.module.scss';
+import classes from './FeaturesList.module.scss';
 
-export type GridItem = {
+export type FeatureItem = {
   icon: StaticImageData;
   title: string;
   paragraph: string;
 };
 
-type GridItems = {
+type FeaturesListProps = {
   heading?: string;
-  items: GridItem[];
+  items: FeatureItem[];
 };
 
-const GridItems = ({ heading, items }: GridItems) => {
+const FeaturesList = ({ heading, items }: FeaturesListProps) => {
   return (
     <div className={classes.container}>
       {heading && <h1 className={classes.heading}>{heading}</h1>}
@@ -35,4 +35,4 @@ const GridItems = ({ heading, items }: GridItems) => {
   );
 };
 
-export default GridItems;
+export default FeaturesList;

@@ -31,7 +31,7 @@ const FindOutPage = () => {
       </Section>
       <Section
         backgroundColor={Colors.BACKGROUND}
-        classes={{ section: classes.bookSection }}
+        classes={{ section: classes.bookSection, content: classes.bookContent }}
       >
         <BookSummary
           content={

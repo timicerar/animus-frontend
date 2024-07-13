@@ -18,6 +18,9 @@
     },
     "shop": {
       "title": "Animus | Trgovina"
+    },
+    "termsAndConditions": {
+      "title": "Animus | Splošni pogoji poslovanja"
     }
   },
   "shared": {
@@ -27,7 +30,9 @@
     "toHomePage": "Na prvo stran",
     "readMore": "Preberi več",
     "readLess": "Skrij",
-    "infoEmail": "info@aljatera.com"
+    "infoEmail": "info@aljatera.com",
+    "infoEmail2": "sonja@aljatera.com.",
+    "ecEuropaLink": "https://ec.europa.eu/odr"
   },
   "homePage": {
     "sections": {
@@ -252,6 +257,76 @@
       "4": {
         "paragraph": "»Animus me je takoj potegnil v svoj svet in z junaki sem dihal skozi celo knjigo ter potoval po novih svetovih. To je ena tistih, žal ne tako pogostih knjig, ko komaj čakaš, da gredo otroci (in žena) spat, da se lahko čim prej vrneš na Ajatero. Ena tistih, kjer z žalostjo gledaš, kako se strani do konca manjšajo in ko se v naslednjih dneh po koncu počutiš malo praznega.<breakPoint />Težko bi rekel ali je knjiga bolj za otroke ali za odrasle, vendar mislim, da prave zgodbe dajo vsakemu, kar išče, in Animus je ena takih. Knjiga tako polna lekcij o odraščanju, pogumu, prijateljstvu, da ti odpre nove nazore. Kdo bi si mislil, da bom tukaj našel eno boljših metod za spopadanje s konflikti. Hvala ti Nil.«",
         "author": "MARKO KREMŽAR, 43 let"
+      }
+    }
+  },
+  "shopPage": {
+    "pageTitle": "Nakup Animusa",
+    "products": {
+      "1": {
+        "title": "ANIMUS: V svetu senc",
+        "caption": "1. del"
+      },
+      "2": {
+        "title": "ANIMUS: Med svetlobo in temo",
+        "caption": "2. del"
+      },
+      "3": {
+        "title": "ANIMUS: Ravnovesje",
+        "caption": "3. del"
+      }
+    },
+    "productDetails": {
+      "shipping": "Poštnina je brezplačna<breakPoint />(velja za Slovenijo).",
+      "termsAndConditions": "Prebral sem <linkComponent>splošne pogoje poslovanja</linkComponent> in se z njimi strinjam."
+    }
+  },
+  "termsAndConditionsPage": {
+    "pageTitle": "Splošni pogoji<breakPoint />poslovanja",
+    "sections": {
+      "general": "Spletno prodajo izvaja Aljatera, zavod za založniško dejavnost, Radenci (elektronski naslov: <linkComponent>info@aljatera.com</linkComponent>). Družba je vpisana v register pri Okrožnem sodišču v Murski Soboti z matično številko 8827583000, davčna številka 55540821.",
+      "priceAndPurchase": {
+        "title": "Cena in nakup",
+        "paragraphs": {
+          "1": "Cene izdelkov in poštnine so v evrih (EUR) z DDV. Kupnina se zaračuna v enem obroku. Jamčimo, da je vsak nakup v naši spletni trgovini varen.",
+          "2": "Cena knjige je fiksna in se ne spreminja, v primeru ugodnosti velja cena na dan oddaje naročila. Originalni račun prejmete ob dostavi knjige.",
+          "3": "Blago boste prejeli v predvidoma dveh do treh delovnih dneh.",
+          "4": "Poštnina je brezplačna."
+        }
+      },
+      "returnPolicy": {
+        "title": "Vračilo",
+        "paragraphs": {
+          "1": "Kot kupec imate pravico, da v 14 dneh pisno obvestite Aljatero o odstopu od pogodbe (brez navedbe razlogov za odstop). Odstopni rok poteče v 14 oziroma 15 dneh od dneva, ko ste pridobili dejansko posest nad blagom ali jo je pridobila namesto vas tretja oseba, ki ni prevoznik in ste jo v ta namen določili. Obvestilo o odstopu od pogodbe mora biti poslano pred iztekom odstopnega roka.",
+          "2": "Nedvoumno izjavo o odstopu, na kateri mora biti zapisano vsaj vaše ime in priimek, naslov, vaši kontaktni podatki (telefonska številka ali e-poštni naslov) in podatki o vašem TRR, če želite, da se vam kupnina vrne z bančnim nakazilom na vaš račun. Obvestilo o nameravanem vračilu knjige lahko pošljete na elektronski naslov <linkComponent>info@aljatera.com</linkComponent> ali na Aljatera, zavod za založniško dejavnost, organizacijska enota Maribor, Plečnikova 1, 2000 Maribor.",
+          "3": "Če odstopite od pogodbe, morate prejeto blago vrniti najpozneje v 14 dneh po sporočilu, da odstopate od pogodbe, pri čemer sami krijete stroške vračila blaga. V primeru pravočasnega odstopa od pogodbe vam bo Aljatera v roku 14 dni po prejemu vrnjene knjige vrnila vsa prejeta plačila. Blago morate Aljateri vrniti v stanju, v kakršnem je bilo, ko vam je bilo izročeno oz. ko je bilo izročeno naslovniku. Blago morate vrniti na naslov: Aljatera, zavod za založniško dejavnost, organizacijska enota Maribor, Plečnikova 1, 2000 Maribor."
+        }
+      },
+      "cashOnDelivery": {
+        "title": "Plačilo po povzetju",
+        "paragraphs": {
+          "1": "Pri izbiri plačila po povzetju Pošta Slovenije zaračuna provizijo za nakazilo. Aljatera na ta znesek nima vpliva, saj ga določa Pošta Slovenije. Znesek se prišteje k ceni knjige.",
+          "2": "V kolikor kupec blaga ne prevzame, ga Pošta Slovenije po določenem času vrne pošiljatelju in s tem nastanejo dodatni stroški, ki jih krije kupec."
+        }
+      },
+      "onlinePayment": {
+        "title": "Spletno plačilo",
+        "paragraphs": {
+          "1": "Izberete lahko plačilo PayPal, za katerega potrebujete veljaven račun PayPal, ali plačilo z debitno ali kreditno kartico. Sistem plačevanja omogoča PayPal, zato je plačilo varno, za kar vam jamči tudi Aljatera. Vse provizije pri spletnem plačevanju krije Aljatera."
+        }
+      },
+      "terms": {
+        "title": "Splošni pogoji",
+        "paragraphs": {
+          "1": "Kot kupcu vam pripadajo vse pravice po Zakonu o varstvu potrošnikov.",
+          "2": "Aljatera sprejema reklamacije na elektronski naslov <linkComponent>info@aljatera.com</linkComponent> in jih bo rešila v najkrajšem možnem času.",
+          "3": "Aljatera ne priznava nobenega izvajalca izvensodnega reševanja potrošniških sporov kot pristojnega za reševanje sporov, ki bi ga kupec lahko sprožil v skladu z Zakonom o izvensodnem reševanju potrošniških sporov. Platforma za spletno reševanje potrošniških sporov je na voljo na spletni povezavi <linkComponent>https://ec.europa.eu/odr</linkComponent>.",
+          "4": "Pisna dokazila o naročilu kupca so skupaj s splošnimi pogoji shranjena pri Aljateri, zavodu za založniško dejavnost, organizacijska enota Maribor, Plečnikova 1, 2000 Maribor in so kupcu dostopna na podlagi njegove zahteve.",
+          "5": "Obdelava osebnih podatkov lahko poteka na podlagi ene od naslednjih pravnih podlag: izrecnega soglasja, obstoječega pogodbenega razmerja, zakonskih zahtev, ki Aljatero zavezujejo kot upravljavca osebnih podatkov, ali pa na podlagi medsebojnega razmerja med Aljatero in kupcem zaradi njegovih preteklih nakupov blaga skladno s Splošno uredbo EU o varstvu osebnih podatkov (zakoniti interes). V slednjem primeru takšna obdelava poteka omejeno časovno obdobje 5 let, z upoštevanjem strogih pogojev veljavne zakonodaje in na podlagi skrbne ocene interesov upravljavca in interesov ter pravic kupca, kupec pa lahko kadarkoli ugovarja takšni obdelavi, in sicer preko e-pošte (<linkComponent>info@aljatera.com</linkComponent>) ali pisno na naslov Aljatera, zavod za založniško dejavnost, organizacijska enota Maribor, Plečnikova 1, 2000 Maribor.",
+          "6": "Elektronski naslov pooblaščene osebe za varstvo osebnih podatkov: <linkComponent>sonja@aljatera.com</linkComponent>.",
+          "7": "Pridržujemo si pravico, da izjemoma (delno) odstopimo od izvedbe naročila v primerih, če naročenih knjig zmanjka na zalogi, če ugotovimo povečano plačilno rizičnost kupca ali če naročilnica ni bila izpolnjena v skladu s splošnimi pogoji. V vseh takih in podobnih primerih vas bomo o morebitnem odstopu od pogodbe z naše strani takoj obvestili po e-pošti oz. telefonu.",
+          "8": "Stroške priprave blaga in pošiljanja za vsa naročila poravna Aljatera."
+        }
       }
     }
   },

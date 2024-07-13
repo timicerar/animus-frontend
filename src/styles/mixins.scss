@@ -57,7 +57,7 @@
   border-radius: 16px;
   cursor: pointer;
   @include interaction-transition;
-  box-shadow: rgba(0, 0, 0, 0.25) 0 4px 4px;;
+  box-shadow: $box-shadow;
 }
 
 @mixin buttonColor($color, $background, $border-color) {

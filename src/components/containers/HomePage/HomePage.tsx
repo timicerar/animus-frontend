@@ -7,19 +7,19 @@ import FilipImage from 'public/images/people/filip.png';
 import JanImage from 'public/images/people/jan.png';
 import ReadBackground from 'public/images/read_background.png';
 import Banner from '@/components/compositions/Banner/Banner';
-import GridItems from '@/components/compositions/GridItems/GridItems';
+import FeaturesList from '@/components/compositions/FeaturesList/FeaturesList';
 import HeroImage from '@/components/compositions/HeroImage/HeroImage';
 import QuoteCard from '@/components/compositions/QuoteCard/QuoteCard';
 import Section from '@/components/compositions/Section/Section';
 import VideoBanner from '@/components/compositions/VideoBanner/VideoBanner';
 import { Routes } from '@/constants/routes';
 import { Sections } from '@/constants/sections';
-import useGetGridItems from '@/hooks/useGetGridItems';
+import useGetWorldOfAnimusItems from '@/hooks/useGetWorldOfAnimusItems';
 import useScrollToSection from '@/hooks/useScrollToSection';
 
 const HomePage = () => {
   const { t } = useTranslation();
-  const { heading, items } = useGetGridItems();
+  const { heading, items } = useGetWorldOfAnimusItems();
 
   useScrollToSection();
 
@@ -69,7 +69,7 @@ const HomePage = () => {
         />
       </Section>
       <Section>
-        <GridItems heading={heading} items={items} />
+        <FeaturesList heading={heading} items={items} />
       </Section>
       <Section
         id={Sections.ILLUSTRATIONS_SECTION_ID}

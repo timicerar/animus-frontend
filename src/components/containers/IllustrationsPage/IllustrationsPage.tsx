@@ -36,17 +36,20 @@ const IllustrationsPage = () => {
           <NextImage
             src={Illustration1}
             alt="illustration-1"
+            placeholder="blur"
             className={classes.image}
           />
           <NextImage
             src={Illustration2}
             alt="illustration-2"
+            placeholder="blur"
             className={classes.image}
           />
           <div className={classes.illustrationFullWidth}>
             <NextImage
               src={Illustration3}
               alt="illustration-3"
+              placeholder="blur"
               className={classes.image}
             />
           </div>
@@ -70,28 +73,33 @@ const IllustrationsPage = () => {
           <NextImage
             src={Illustration4}
             alt="illustration-4"
+            placeholder="blur"
             className={classes.image}
           />
           <NextImage
             src={Illustration5}
             alt="illustration-5"
+            placeholder="blur"
             className={classes.image}
           />
           <div className={classes.illustrationFullWidth}>
             <NextImage
               src={Illustration6}
               alt="illustration-6"
+              placeholder="blur"
               className={classes.image}
             />
           </div>
           <NextImage
             src={Illustration7}
             alt="illustration-7"
+            placeholder="blur"
             className={classes.image}
           />
           <NextImage
             src={Illustration8}
             alt="illustration-8"
+            placeholder="blur"
             className={classes.image}
           />
         </div>

@@ -6,12 +6,12 @@ import HandsIcon from 'public/images/icons/hands.svg';
 import HeartIcon from 'public/images/icons/heart.svg';
 import MoonIcon from 'public/images/icons/moon.svg';
 import { useMemo } from 'react';
-import { GridItem } from '@/components/compositions/GridItems/GridItems';
+import { FeatureItem } from '@/components/compositions/FeaturesList/FeaturesList';
 
-const useGetGridItems = () => {
+const useGetWorldOfAnimusItems = () => {
   const { t } = useTranslation();
   const heading = t('homePage.sections.5.title');
-  const items = useMemo<GridItem[]>(() => {
+  const items = useMemo<FeatureItem[]>(() => {
     return [
       {
         title: t('homePage.sections.5.subsections.1.title'),
@@ -49,4 +49,4 @@ const useGetGridItems = () => {
   return { heading, items };
 };
 
-export default useGetGridItems;
+export default useGetWorldOfAnimusItems;
