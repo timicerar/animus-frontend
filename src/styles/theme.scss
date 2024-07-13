@@ -15,8 +15,12 @@ $breakpoints: (
 $interaction-transition-duration: 200ms;
 $interaction-transition-timing-function: ease-in-out;
 
-/* LAYOUT */
+/* Z-INDEX */
 $navbar-z-index: 10;
+$section-bg-image-z-index: 0;
+$section-children-z-index: 1;
+
+/* LAYOUT */
 $navbar-height: 80px;
 $footer-height: 64px;
 
@@ -26,4 +30,5 @@ $quote-max-width: 1200px;
 $grid-max-width: 1200px;
 $paragraph-max-width: 1000px;
 $book-section-max-width: 756px;
+$illustration-section-max-width: 1000px;
 

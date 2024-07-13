@@ -12,15 +12,17 @@ export interface NextImageProps extends ImageProps {
 const NextImage = ({
   maxWidth,
   maxHeight,
+  priority,
   LinkProps,
   className,
   ...props
 }: NextImageProps) => {
   const image = (
     <Image
-      quality={100}
       {...props}
+      quality={100}
       alt={props?.alt}
+      priority={priority}
       className={classNames(classes.nextImage, className)}
       style={{
         ...props?.style,

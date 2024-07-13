@@ -18,6 +18,34 @@
   justify-content: flex-start;
   flex-direction: column;
   min-height: unset;
-  gap: 32px;
   padding: 64px 32px;
+}
+
+.illustrationsWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  width: 100%;
+  max-width: $illustration-section-max-width;
+
+  @include mq('sm') {
+    grid-template-columns: 1fr;
+  }
+}
+
+.illustrationFullWidth {
+  grid-column: 1 / 3;
+
+  @include mq('sm') {
+    grid-column: unset;
+  }
+}
+
+.image {
+  object-fit: contain;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  border-radius: 12px;
 }

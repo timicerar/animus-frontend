@@ -7,6 +7,7 @@ import classes from './HeroImage.module.scss';
 type HeroImageProps = {
   classes?: {
     section?: string;
+    sectionContent?: string;
     image?: string;
   };
   backgroundImage: StaticImageData;
@@ -20,12 +21,16 @@ const HeroImage = ({
 }: HeroImageProps) => {
   return (
     <Section
-      className={classNames(classes.container, styles?.section)}
+      classes={{
+        section: classNames(classes.container, styles?.section),
+        content: styles?.sectionContent,
+      }}
       backgroundImage={backgroundImage}
     >
       <NextImage
         src={image}
         alt="hero-image"
+        priority
         className={classNames(classes.image, styles?.image)}
       />
     </Section>

@@ -8,7 +8,7 @@
   width: 100%;
   max-width: $quote-max-width;
 
-  @include mq('sm') {
+  @include mq('md') {
     flex-direction: column;
     gap: 32px;
   }

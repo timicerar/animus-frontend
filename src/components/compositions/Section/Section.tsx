@@ -1,12 +1,17 @@
 import classNames from 'classnames';
 import { StaticImageData } from 'next/image';
-import { CSSProperties, PropsWithChildren, useMemo } from 'react';
-import { Color, Colors } from '@/constants/colors';
+import { PropsWithChildren } from 'react';
+import NextImage from '@/components/components/NextImage/NextImage';
+import { Color } from '@/constants/colors';
 import classes from './Section.module.scss';
 
 type SectionProps = {
   id?: string;
-  className?: string;
+  classes?: {
+    section?: string;
+    image?: string;
+    content?: string;
+  };
   backgroundImage?: StaticImageData;
   backgroundColor?: Color;
 } & PropsWithChildren;
@@ -14,31 +19,28 @@ type SectionProps = {
 const Section = ({
   id,
   children,
-  className,
-  backgroundColor = Colors.WHITE,
+  classes: styles,
+  backgroundColor,
   backgroundImage,
 }: SectionProps) => {
-  const style = useMemo<CSSProperties | undefined>(() => {
-    if (backgroundImage) {
-      return {
-        background: `url('${backgroundImage?.src}') no-repeat center/cover`,
-      };
-    }
-
-    if (backgroundColor) {
-      return { background: backgroundColor };
-    }
-
-    return undefined;
-  }, [backgroundColor, backgroundImage]);
-
   return (
     <section
       id={id}
-      className={classNames(classes.container, className)}
-      style={style}
+      className={classNames(classes.container, styles?.section)}
+      style={{ background: backgroundColor }}
     >
-      {children}
+      {backgroundColor === undefined && backgroundImage && (
+        <NextImage
+          src={backgroundImage}
+          alt="hero-image-background"
+          className={classNames(classes.image, styles?.image)}
+          placeholder="blur"
+          priority
+        />
+      )}
+      <div className={classNames(classes.children, styles?.content)}>
+        {children}
+      </div>
     </section>
   );
 };

@@ -78,7 +78,10 @@ const BottomBanner = () => {
   }, [handleBackToTop, isHomePage, t]);
 
   return (
-    <Section className={classes.section} backgroundColor={backgroundColor}>
+    <Section
+      classes={{ section: classes.section }}
+      backgroundColor={backgroundColor}
+    >
       <div className={classes.container}>{content}</div>
     </Section>
   );

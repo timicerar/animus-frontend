@@ -33,10 +33,6 @@
   background: var(--color-black);
 }
 
-.shop {
-  justify-content: flex-start;
-}
-
 .logo {
   display: flex;
   align-items: center;
@@ -45,5 +41,18 @@
   @include mq('xxs') {
     visibility: hidden;
     display: none;
+  }
+}
+
+.hideLogo {
+  user-select: none;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+
+.button {
+  @include mq('xxs') {
+    width: 100%;
   }
 }

@@ -1,6 +1,7 @@
 @import "src/styles";
 
 .container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,4 +11,20 @@
   @include mq('sm') {
     padding: 64px 32px;
   }
+}
+
+.children {
+  width: inherit;
+  z-index: $section-children-z-index;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: $section-bg-image-z-index;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }

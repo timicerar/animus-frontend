@@ -19,22 +19,24 @@ const Navbar = () => {
       className={classNames(classes.container, {
         [classes.sticky]: !isHomePage,
         [classes.visible]: visible,
-        [classes.shop]: isShopPage,
       })}
     >
-      {(visible || !isHomePage) && (
-        <Link href={Routes.HOME} className={classes.logo}>
-          <NextImage
-            src={AnimusLogo}
-            alt="animus-logo"
-            priority
-            height={72}
-            width={72}
-          />
-        </Link>
-      )}
+      <Link
+        href={Routes.HOME}
+        className={classNames(classes.logo, {
+          [classes.hideLogo]: isHomePage ? !visible : false,
+        })}
+      >
+        <NextImage
+          src={AnimusLogo}
+          alt="animus-logo"
+          height={72}
+          width={72}
+          priority
+        />
+      </Link>
       {!isShopPage && (
-        <LinkButton href={Routes.SHOP} color="Red">
+        <LinkButton href={Routes.SHOP} color="Red" className={classes.button}>
           {t('shared.buyBook')}
         </LinkButton>
       )}
