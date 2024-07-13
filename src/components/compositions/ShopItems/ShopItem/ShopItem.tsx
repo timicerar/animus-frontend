@@ -28,6 +28,7 @@ const ShopItem = ({ item }: ShopItemProps) => {
         <NextImage
           src={item?.image}
           alt={item?.href}
+          placeholder="blur"
           className={classes.image}
         />
       </div>
