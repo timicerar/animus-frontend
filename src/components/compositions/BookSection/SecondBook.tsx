@@ -1,5 +1,5 @@
 import { useTranslation } from 'next-i18next';
-import AnimusPartTwoImage from 'public/images/animus_part_2.jpg';
+import AnimusPartTwoImage from 'public/images/covers/animus_part_2.jpg';
 import NextImage from '@/components/components/NextImage/NextImage';
 import BookParagraphs from '@/components/compositions/BookSection/BookParagraphs';
 import { getSecondBookParagraphs } from '@/utils/bookUtils';

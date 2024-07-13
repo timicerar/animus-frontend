@@ -1,21 +1,21 @@
 import { GetServerSideProps } from 'next';
 import Head from '@/components/components/Head/Head';
-import ShopProductPage from '@/components/containers/ShopProductPage/ShopProductPage';
+import ShopSuccessPage from '@/components/containers/ShopSuccessPage/ShopSuccessPage';
 import DefaultLayout from '@/components/layout/DefaultLayout/DefaultLayout';
 import { Routes } from '@/constants/routes';
 import { NextPageWithLayout } from '@/pages/_app';
 import { withTrans } from '@/utils/withTrans';
 
-const ShopProduct: NextPageWithLayout = () => {
+const ShopSuccess: NextPageWithLayout = () => {
   return (
     <>
-      <Head route={Routes.SHOP_PRODUCT} />
-      <ShopProductPage />
+      <Head route={Routes.SHOP_SUCCESS} />
+      <ShopSuccessPage />
     </>
   );
 };
 
-ShopProduct.getLayout = (page) => {
+ShopSuccess.getLayout = (page) => {
   return <DefaultLayout>{page}</DefaultLayout>;
 };
 
@@ -25,4 +25,4 @@ export const getServerSideProps: GetServerSideProps = withTrans(async () => {
   };
 });
 
-export default ShopProduct;
+export default ShopSuccess;

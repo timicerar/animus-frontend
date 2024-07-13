@@ -1,19 +1,15 @@
 import { GetServerSideProps } from 'next';
-import Head from 'next/head';
-import { useTranslation } from 'next-i18next';
+import Head from '@/components/components/Head/Head';
 import IllustrationsPage from '@/components/containers/IllustrationsPage/IllustrationsPage';
 import DefaultLayout from '@/components/layout/DefaultLayout/DefaultLayout';
+import { Routes } from '@/constants/routes';
 import { NextPageWithLayout } from '@/pages/_app';
 import { withTrans } from '@/utils/withTrans';
 
 const Illustrations: NextPageWithLayout = () => {
-  const { t } = useTranslation();
-
   return (
     <>
-      <Head>
-        <title>{t('routes.illustrations')}</title>
-      </Head>
+      <Head route={Routes.ILLUSTRATIONS} />
       <IllustrationsPage />
     </>
   );

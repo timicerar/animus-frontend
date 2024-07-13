@@ -1,14 +1,24 @@
 {
-  "routes": {
-    "home": "Animus | Domov",
-    "shop": "Animus | Trgovina",
-    "findOut": "Animus | Izvedi več",
-    "read": "Animus | Preberi",
-    "illustrations": "Animus | Ilustracije"
-  },
-  "meta": {
-    "title": "Animus",
-    "description": "Skrivnostni tuneli energije po vesolju, fantastična in starodavna bitja, čarobni kristali, nenavadni planeti, prijatelji in sovražniki, dobro in zlo – po najbolj znanem čarovniku in najmočnejšem prstanu zdaj slovenska fantazijska knjiga."
+  "seo": {
+    "default": {
+      "title": "Animus",
+      "description": "Skrivnostni tuneli energije po vesolju, fantastična in starodavna bitja, čarobni kristali, nenavadni planeti, prijatelji in sovražniki, dobro in zlo – po najbolj znanem čarovniku in najmočnejšem prstanu zdaj slovenska fantazijska knjiga."
+    },
+    "home": {
+      "title": "Animus"
+    },
+    "findOut": {
+      "title": "Animus | Izvedi več"
+    },
+    "read": {
+      "title": "Animus | Preberi"
+    },
+    "illustrations": {
+      "title": "Animus | Ilustracije"
+    },
+    "shop": {
+      "title": "Animus | Trgovina"
+    }
   },
   "shared": {
     "buyBook": "Kupi knjigo",

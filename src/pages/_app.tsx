@@ -8,8 +8,7 @@ import {
 } from '@tanstack/react-query';
 import { NextPage } from 'next';
 import type { AppProps } from 'next/app';
-import Head from 'next/head';
-import { appWithTranslation, useTranslation } from 'next-i18next';
+import { appWithTranslation } from 'next-i18next';
 import NextNProgress from 'nextjs-progressbar';
 import { ReactElement, ReactNode, useState } from 'react';
 import FacebookPixel from '@/components/components/FacebookPixel/FacebookPixel';
@@ -33,7 +32,6 @@ function MyApp({
   Component,
   pageProps,
 }: AppPropsWithLayout<{ dehydratedState: DehydratedState }>) {
-  const { t } = useTranslation();
   const [queryClient] = useState(
     () =>
       new QueryClient({
@@ -59,14 +57,6 @@ function MyApp({
                 options={{ showSpinner: false }}
                 color={Colors.RED}
               />
-              <Head>
-                <title>{t('meta.title')}</title>
-                <meta name="description" content={t('meta.description')} />
-                <meta
-                  name="viewport"
-                  content="width=device-width, initial-scale=1"
-                />
-              </Head>
               {getLayout(<Component {...pageProps} />)}
               {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
                 <GoogleAnalytics
