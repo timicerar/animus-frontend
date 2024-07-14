@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { MouseEvent, PropsWithChildren } from 'react';
+import { MouseEvent, PropsWithChildren, ReactNode } from 'react';
 import useGetButtonColorClass from '@/hooks/useGetButtonColorClass';
 import classes from '@/styles/shared/Button.module.scss';
 
@@ -18,6 +18,8 @@ export type ButtonProps = {
   color?: ButtonColor;
   disabled?: boolean;
   fullWidth?: boolean;
+  leadingIcon?: ReactNode;
+  trailingIcon?: ReactNode;
   onClick?: (e: MouseEvent<HTMLButtonElement>) => void;
 } & PropsWithChildren;
 
@@ -28,6 +30,8 @@ const Button = ({
   fullWidth = false,
   onClick,
   className,
+  leadingIcon,
+  trailingIcon,
   children,
 }: ButtonProps) => {
   const colorClass = useGetButtonColorClass(type, color);
@@ -47,7 +51,11 @@ const Button = ({
         className
       )}
     >
-      {children}
+      <span className={classes.wrapper}>
+        {leadingIcon}
+        {children}
+        {trailingIcon}
+      </span>
     </button>
   );
 };

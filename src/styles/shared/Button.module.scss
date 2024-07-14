@@ -4,6 +4,13 @@
   @include button;
 }
 
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
 .fullWidth {
   width: 100%;
 }

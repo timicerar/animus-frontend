@@ -37,11 +37,12 @@ module.exports = withBundleAnalyzer(nextConfig);
 
 const cspHeader = `
     default-src 'self';
-    connect-src 'self' blob: data: https://*.google-analytics.com/;
-    script-src 'self' 'unsafe-eval' 'unsafe-inline' blob: data: https://www.googletagmanager.com/ https://*.google-analytics.com/ https://connect.facebook.net/;
+    connect-src 'self' blob: data: https://*.google-analytics.com/ https://*.paypal.com/;
+    script-src 'self' 'unsafe-eval' 'unsafe-inline' blob: data: https://www.googletagmanager.com/ https://*.google-analytics.com/ https://connect.facebook.net/ https://*.paypal.com/;
     style-src 'self' 'unsafe-inline';
-    img-src 'self' blob: data: https://*.google-analytics.com/ https://www.googletagmanager.com/ https://www.facebook.com/;
+    img-src 'self' blob: data: https://*.google-analytics.com/ https://www.googletagmanager.com/ https://www.facebook.com/ https://*.paypalobjects.com/;
     font-src 'self' data: https://fonts.gstatic.com;
+    frame-src 'self' data: https://*.paypal.com/;
     object-src 'none';
     base-uri 'self';
     form-action 'self';

@@ -15,6 +15,8 @@ const LinkButton = ({
   fullWidth = false,
   disabled = false,
   className,
+  trailingIcon,
+  leadingIcon,
   children,
 }: LinkButtonProps) => {
   const colorClass = useGetButtonColorClass(type, color);
@@ -24,6 +26,8 @@ const LinkButton = ({
       <Button
         type={type}
         color={color}
+        trailingIcon={trailingIcon}
+        leadingIcon={leadingIcon}
         fullWidth={fullWidth}
         className={className}
         disabled
@@ -47,7 +51,11 @@ const LinkButton = ({
         className
       )}
     >
-      {children}
+      <span className={classes.wrapper}>
+        {leadingIcon}
+        {children}
+        {trailingIcon}
+      </span>
     </Link>
   );
 };

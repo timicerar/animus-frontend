@@ -1,4 +1,6 @@
 import '@/styles/globals.scss';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { config } from '@fortawesome/fontawesome-svg-core';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import {
   DehydratedState,
@@ -16,6 +18,8 @@ import FontProvider from '@/components/providers/FontProvider/FontProvider';
 import NavbarProvider from '@/components/providers/NavbarProvider/NavbarProvider';
 import SectionProvider from '@/components/providers/SectionProvider/SectionProvider';
 import { Colors } from '@/constants/colors';
+
+config.autoAddCss = false;
 
 export type NextPageWithLayout<P = Record<string, never>, IP = P> = NextPage<
   P,

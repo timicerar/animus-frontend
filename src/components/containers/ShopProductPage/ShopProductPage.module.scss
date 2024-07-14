@@ -1,0 +1,12 @@
+@import "src/styles";
+
+.pageSection {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.pageContent {
+  width: 100%;
+  max-width: 750px;
+}
