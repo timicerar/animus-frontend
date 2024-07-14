@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://aljatera.com/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://aljatera.com/shop</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aljatera.com/find-out</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aljatera.com/read</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aljatera.com/illustrations</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aljatera.com/terms-and-conditions</loc>
+    <priority>0.5</priority>
+  </url>
+</urlset>

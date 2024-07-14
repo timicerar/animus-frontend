@@ -7,6 +7,14 @@ const nextConfig = {
   i18n,
   output: 'standalone',
   reactStrictMode: true,
+  rewrites: async () => {
+    return [
+      {
+        source: '/robots.txt',
+        destination: '/api/robots',
+      },
+    ];
+  },
   async headers() {
     return [
       {
