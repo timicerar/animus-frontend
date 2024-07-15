@@ -9,7 +9,7 @@ import customClasses from './TermsAndConditionsPage.module.scss';
 const TermsAndConditionsPage = () => {
   return (
     <div className={classes.container}>
-      <Section classes={{ section: classes.pageTitleSection }}>
+      <Section className={classes.pageTitleSection}>
         <h1 className={classes.title}>
           <Trans
             i18nKey="termsAndConditionsPage.pageTitle"
@@ -18,10 +18,7 @@ const TermsAndConditionsPage = () => {
         </h1>
       </Section>
       <Section
-        classes={{
-          section: classNames(classes.pageSection, customClasses.pageSection),
-          content: customClasses.pageContent,
-        }}
+        className={classNames(classes.pageSection, customClasses.pageSection)}
         backgroundColor={Colors.BACKGROUND}
       >
         <TermsAndConditions />

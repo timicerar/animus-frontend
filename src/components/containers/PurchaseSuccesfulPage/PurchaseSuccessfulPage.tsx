@@ -10,13 +10,11 @@ const PurchaseSuccessfulPage = () => {
 
   return (
     <div className={classes.container}>
-      <Section classes={{ section: classes.pageTitleSection }}>
+      <Section className={classes.pageTitleSection}>
         <h1 className={classes.title}>{t('purchaseSuccessPage.pageTitle')}</h1>
       </Section>
       <Section
-        classes={{
-          section: classNames(classes.pageSection, customClasses.pageSection),
-        }}
+        className={classNames(classes.pageSection, customClasses.pageSection)}
         backgroundColor={Colors.BACKGROUND}
       >
         <p className={customClasses.paragraph}>

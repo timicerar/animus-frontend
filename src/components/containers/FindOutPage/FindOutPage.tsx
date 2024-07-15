@@ -26,12 +26,12 @@ const FindOutPage = () => {
           image: classes.heroImage,
         }}
       />
-      <Section classes={{ section: classes.pageTitleSection }}>
+      <Section className={classes.pageTitleSection}>
         <h1 className={classes.title}>{t('findOutPage.pageTitle')}</h1>
       </Section>
       <Section
         backgroundColor={Colors.BACKGROUND}
-        classes={{ section: classes.bookSection, content: classes.bookContent }}
+        className={classes.bookSection}
       >
         <BookSummary
           content={

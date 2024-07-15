@@ -7,7 +7,7 @@ const VideoBanner = () => {
   const { t } = useTranslation();
 
   return (
-    <Section classes={{ section: classes.section }}>
+    <Section className={classes.section}>
       <div className={classes.video}>
         <p className={classes.paragraph}>
           {t('homePage.sections.1.paragraph')}

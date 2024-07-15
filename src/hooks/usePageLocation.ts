@@ -25,12 +25,22 @@ const usePageLocation = () => {
     return pathname?.includes(Routes.ILLUSTRATIONS);
   }, [pathname]);
 
+  const isTermsPage = useMemo(() => {
+    return pathname?.includes(Routes.TERMS_AND_CONDITIONS);
+  }, [pathname]);
+
+  const isPurchaseSuccessPage = useMemo(() => {
+    return pathname?.includes(Routes.PURCHASE_SUCCESSFUL);
+  }, [pathname]);
+
   return {
     isHomePage,
     isShopPage,
     isReadPage,
     isFindOutPage,
     isIllustrationsPage,
+    isTermsPage,
+    isPurchaseSuccessPage,
   };
 };
 

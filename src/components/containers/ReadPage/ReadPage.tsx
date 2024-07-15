@@ -13,7 +13,7 @@ const ReadPage = () => {
 
   return (
     <>
-      <Section classes={{ section: classes.pageTitleSection }}>
+      <Section className={classes.pageTitleSection}>
         <h1 className={classes.title}>
           <Trans
             i18nKey="readPage.pageTitle"
@@ -22,7 +22,7 @@ const ReadPage = () => {
         </h1>
       </Section>
       <Section
-        classes={{ section: classes.bookSection, content: classes.bookContent }}
+        className={classes.bookSection}
         backgroundColor={Colors.BACKGROUND}
       >
         <FirstBook />
@@ -37,7 +37,7 @@ const ReadPage = () => {
         />
       </Section>
       <Section
-        classes={{ section: classes.bookSection, content: classes.bookContent }}
+        className={classes.bookSection}
         backgroundColor={Colors.BACKGROUND}
       >
         <SecondBook />

@@ -20,7 +20,7 @@ const IllustrationsPage = () => {
 
   return (
     <>
-      <Section classes={{ section: classes.pageTitleSection }}>
+      <Section className={classes.pageTitleSection}>
         <h1 className={classes.title}>
           <Trans
             i18nKey="illustrationsPage.pageTitle"
@@ -29,7 +29,7 @@ const IllustrationsPage = () => {
         </h1>
       </Section>
       <Section
-        classes={{ section: classes.illustrationsSection }}
+        className={classes.illustrationsSection}
         backgroundColor={Colors.BACKGROUND}
       >
         <div className={classes.illustrationsWrapper}>
@@ -66,7 +66,7 @@ const IllustrationsPage = () => {
         />
       </Section>
       <Section
-        classes={{ section: classes.illustrationsSection }}
+        className={classes.illustrationsSection}
         backgroundColor={Colors.BACKGROUND}
       >
         <div className={classes.illustrationsWrapper}>

@@ -30,14 +30,9 @@
   flex-direction: column;
   min-height: unset;
   padding: 64px 32px;
+  gap: 32px;
 
   .marginBottom {
     margin-bottom: 16px;
   }
-}
-
-.bookContent {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
 }

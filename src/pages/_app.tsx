@@ -11,7 +11,6 @@ import {
 } from '@tanstack/react-query';
 import { NextPage } from 'next';
 import type { AppProps } from 'next/app';
-import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import { appWithTranslation, useTranslation } from 'next-i18next';
 import NextNProgress from 'nextjs-progressbar';
@@ -20,16 +19,10 @@ import FacebookPixel from '@/components/components/FacebookPixel/FacebookPixel';
 import FontProvider from '@/components/providers/FontProvider/FontProvider';
 import NavbarProvider from '@/components/providers/NavbarProvider/NavbarProvider';
 import SectionProvider from '@/components/providers/SectionProvider/SectionProvider';
+import ToastProvider from '@/components/providers/ToastProvider/ToastProvider';
 import { Colors } from '@/constants/colors';
 
 config.autoAddCss = false;
-
-const ToastProvider = dynamic(
-  () => import('@/components/providers/ToastProvider/ToastProvider'),
-  {
-    ssr: false,
-  }
-);
 
 export type NextPageWithLayout<P = Record<string, never>, IP = P> = NextPage<
   P,

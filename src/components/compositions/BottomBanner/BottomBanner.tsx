@@ -12,7 +12,7 @@ import classes from './BottomBanner.module.scss';
 const BottomBanner = () => {
   const { t } = useTranslation();
   const window = useWindow();
-  const { isHomePage, isReadPage } = usePageLocation();
+  const { isHomePage, isReadPage, isTermsPage } = usePageLocation();
 
   const backgroundColor = useMemo(() => {
     if (isReadPage) {
@@ -55,6 +55,29 @@ const BottomBanner = () => {
       );
     }
 
+    if (isTermsPage) {
+      return (
+        <>
+          <LinkButton
+            type="Outlined"
+            color="Red"
+            href={`mailto:${t('shared.infoEmail')}`}
+            className={classes.button}
+          >
+            {t('shared.askUs')}
+          </LinkButton>
+          <LinkButton
+            type="Outlined"
+            color="Red"
+            className={classes.button}
+            href={Routes.SHOP}
+          >
+            {t('shared.toShop')}
+          </LinkButton>
+        </>
+      );
+    }
+
     return (
       <>
         <LinkButton
@@ -75,13 +98,10 @@ const BottomBanner = () => {
         </LinkButton>
       </>
     );
-  }, [handleBackToTop, isHomePage, t]);
+  }, [handleBackToTop, isHomePage, isTermsPage, t]);
 
   return (
-    <Section
-      classes={{ section: classes.section }}
-      backgroundColor={backgroundColor}
-    >
+    <Section className={classes.section} backgroundColor={backgroundColor}>
       <div className={classes.container}>{content}</div>
     </Section>
   );

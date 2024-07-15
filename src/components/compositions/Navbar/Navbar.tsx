@@ -24,6 +24,7 @@ const Navbar = () => {
       <Link
         href={Routes.HOME}
         className={classNames(classes.logo, {
+          [classes.hideLogoOnMobile]: !isShopPage,
           [classes.hideLogo]: isHomePage ? !visible : false,
         })}
       >

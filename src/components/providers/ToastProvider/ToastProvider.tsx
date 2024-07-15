@@ -5,7 +5,7 @@ const ToastProvider = ({ children }: PropsWithChildren) => {
   return (
     <>
       {children}
-      <ToastContainer position="bottom-right" />
+      <ToastContainer position="bottom-right" limit={5} />
     </>
   );
 };
