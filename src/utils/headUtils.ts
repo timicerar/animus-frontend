@@ -27,7 +27,7 @@ export const getSeoContent = (): Partial<Record<Route, SEO>> => ({
     title: i18n?.t('seo.shop.title'),
     description: i18n?.t('seo.default.description'),
   },
-  [Routes.SHOP_SUCCESS]: {
+  [Routes.PURCHASE_SUCCESSFUL]: {
     title: i18n?.t('seo.shop.title'),
     description: i18n?.t('seo.default.description'),
   },

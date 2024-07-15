@@ -2,7 +2,7 @@ import PayPal from '@paypal/checkout-server-sdk';
 import { Order } from '@paypal/checkout-server-sdk/lib/orders/lib';
 import { HttpResponse } from '@paypal/paypalhttp';
 import { NextApiRequest, NextApiResponse } from 'next';
-import PayPalClient from '@/utils/payPalUtils';
+import { PayPalClient } from '@/utils/payPalUtils';
 
 export default async function handler(
   req: NextApiRequest,

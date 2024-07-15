@@ -27,9 +27,15 @@ export const Currency = {
   USD: 'USD',
 } as const;
 
+export const Category = {
+  DIGITAL_GOODS: 'DIGITAL_GOODS',
+  PHYSICAL_GOODS: 'PHYSICAL_GOODS',
+  DONATION: 'DONATION',
+} as const;
+
 export type PayPalCreateOrderRequest = {
   bookId: string;
-  orderPrice: string;
+  orderPrice: number;
 };
 
 export type PayPalCreateOrderResponse = {

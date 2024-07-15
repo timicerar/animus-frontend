@@ -265,15 +265,18 @@
     "products": {
       "1": {
         "title": "ANIMUS: V svetu senc",
-        "caption": "1. del"
+        "caption": "1. del",
+        "payPalTitle": "Knjiga Animus: V svetu senc"
       },
       "2": {
         "title": "ANIMUS: Med svetlobo in temo",
-        "caption": "2. del"
+        "caption": "2. del",
+        "payPalTitle": "Knjiga Animus: Med svetlobo in temo"
       },
       "3": {
         "title": "ANIMUS: Ravnovesje",
-        "caption": "3. del"
+        "caption": "3. del",
+        "payPalTitle": "Knjiga Animus: Ravnovesje"
       }
     },
     "productDetails": {
@@ -339,5 +342,8 @@
   },
   "footer": {
     "copyrights": "Vse pravice pridržane © Aljatera"
+  },
+  "errors": {
+    "paymentError": "Se opravičujemo, pri nakupi knjige je prišlo do napake."
   }
 }

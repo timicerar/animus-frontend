@@ -10,7 +10,9 @@ import {
 } from '@tanstack/react-query';
 import { NextPage } from 'next';
 import type { AppProps } from 'next/app';
-import { appWithTranslation } from 'next-i18next';
+import dynamic from 'next/dynamic';
+import Head from 'next/head';
+import { appWithTranslation, useTranslation } from 'next-i18next';
 import NextNProgress from 'nextjs-progressbar';
 import { ReactElement, ReactNode, useState } from 'react';
 import FacebookPixel from '@/components/components/FacebookPixel/FacebookPixel';
@@ -20,6 +22,13 @@ import SectionProvider from '@/components/providers/SectionProvider/SectionProvi
 import { Colors } from '@/constants/colors';
 
 config.autoAddCss = false;
+
+const ToastProvider = dynamic(
+  () => import('@/components/providers/ToastProvider/ToastProvider'),
+  {
+    ssr: false,
+  }
+);
 
 export type NextPageWithLayout<P = Record<string, never>, IP = P> = NextPage<
   P,
@@ -36,6 +45,7 @@ function MyApp({
   Component,
   pageProps,
 }: AppPropsWithLayout<{ dehydratedState: DehydratedState }>) {
+  const { t } = useTranslation();
   const [queryClient] = useState(
     () =>
       new QueryClient({
@@ -61,7 +71,12 @@ function MyApp({
                 options={{ showSpinner: false }}
                 color={Colors.RED}
               />
-              {getLayout(<Component {...pageProps} />)}
+              <Head>
+                <title>{t('seo.default.title')}</title>
+              </Head>
+              <ToastProvider>
+                {getLayout(<Component {...pageProps} />)}
+              </ToastProvider>
               {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
                 <GoogleAnalytics
                   gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}

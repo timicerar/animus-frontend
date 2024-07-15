@@ -1,9 +1,9 @@
 import ShopItem from '@/components/compositions/ShopItems/ShopItem/ShopItem';
-import useShopProducts from '@/hooks/useShopProducts';
+import useShopProvider from '@/hooks/useShopProvider';
 import classes from './ShopItems.module.scss';
 
 const ShopItems = () => {
-  const { products } = useShopProducts();
+  const { products } = useShopProvider();
 
   return (
     <div className={classes.container}>

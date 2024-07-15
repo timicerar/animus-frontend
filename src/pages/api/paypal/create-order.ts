@@ -2,8 +2,9 @@ import PayPal from '@paypal/checkout-server-sdk';
 import { Order } from '@paypal/checkout-server-sdk/lib/orders/lib';
 import { HttpResponse } from '@paypal/paypalhttp';
 import { NextApiRequest, NextApiResponse } from 'next';
-import { Currency, Intent } from '@/api/models/PayPal';
-import PayPalClient from '@/utils/payPalUtils';
+import { Intent } from '@/api/models/PayPal';
+import { BookId } from '@/api/models/ShopProduct';
+import { getPurchaseUnitByBookId, PayPalClient } from '@/utils/payPalUtils';
 
 export default async function handler(
   req: NextApiRequest,
@@ -12,9 +13,10 @@ export default async function handler(
   switch (req.method) {
     case 'POST':
       try {
-        // TODO: Add quantity of book
-        const orderPrice = req?.body?.orderPrice;
-        const bookId = req?.body?.bookId;
+        const { orderPrice, bookId } = req?.body as {
+          orderPrice?: number;
+          bookId?: BookId;
+        };
 
         if (!orderPrice || !bookId) {
           return res?.status?.(400)?.json({
@@ -28,59 +30,9 @@ export default async function handler(
 
         request.headers['Prefer'] = 'return=representation';
 
-        // TODO: Generate purchase_units for all three books
         request.requestBody({
           intent: Intent.CAPTURE,
-          purchase_units: [
-            {
-              amount: {
-                currency_code: Currency.EUR,
-                value: orderPrice,
-                breakdown: {
-                  item_total: {
-                    currency_code: Currency.EUR,
-                    value: orderPrice,
-                  },
-                  discount: {
-                    currency_code: Currency.EUR,
-                    value: '0',
-                  },
-                  handling: {
-                    currency_code: Currency.EUR,
-                    value: '0',
-                  },
-                  insurance: {
-                    currency_code: Currency.EUR,
-                    value: '0',
-                  },
-                  shipping: {
-                    currency_code: Currency.EUR,
-                    value: '0',
-                  },
-                  shipping_discount: {
-                    currency_code: Currency.EUR,
-                    value: '0',
-                  },
-                  tax_total: {
-                    currency_code: Currency.EUR,
-                    value: '0',
-                  },
-                },
-              },
-              items: [
-                {
-                  name: 'Animus: V svetu senc',
-                  description: 'Prva knjiga v trilogiji',
-                  unit_amount: {
-                    currency_code: Currency.EUR,
-                    value: '15',
-                  },
-                  quantity: '1',
-                  category: 'PHYSICAL_GOODS',
-                },
-              ],
-            },
-          ],
+          purchase_units: getPurchaseUnitByBookId(orderPrice, bookId),
         });
 
         const response: HttpResponse<Order> =

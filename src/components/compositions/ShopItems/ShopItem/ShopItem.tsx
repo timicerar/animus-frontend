@@ -1,21 +1,11 @@
 import classNames from 'classnames';
-import { StaticImageData } from 'next/image';
 import Link from 'next/link';
-import { ReactNode } from 'react';
+import { ShopProduct } from '@/api/models/ShopProduct';
 import NextImage from '@/components/components/NextImage/NextImage';
-import { ShopRoute } from '@/constants/routes';
 import classes from './ShopItem.module.scss';
 
-export type ShopItemType = {
-  href: ShopRoute;
-  image: StaticImageData;
-  title: ReactNode;
-  caption?: ReactNode;
-  reverseCaption?: boolean;
-};
-
 export type ShopItemProps = {
-  item: ShopItemType;
+  item: ShopProduct;
 };
 
 const ShopItem = ({ item }: ShopItemProps) => {

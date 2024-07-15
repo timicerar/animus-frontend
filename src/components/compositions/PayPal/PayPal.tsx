@@ -1,4 +1,6 @@
 import { PayPalButtons, PayPalScriptProvider } from '@paypal/react-paypal-js';
+import { useTranslation } from 'next-i18next';
+import { toast } from 'react-toastify';
 import {
   ColorType,
   CurrencyType,
@@ -34,18 +36,20 @@ const PayPal = ({
   disabled = false,
   style: { layout = 'vertical', label = 'buynow', height = 55, ...styles } = {},
 }: PayPalProps) => {
+  const { t } = useTranslation();
   const { options } = usePayPal(currency);
   const { mutate } = usePayPalCaptureOrder();
 
   return (
     <PayPalScriptProvider options={options}>
       <PayPalButtons
+        forceReRender={[data]}
         style={{ layout, label, height, ...styles }}
         disabled={disabled}
         createOrder={() => payPalCreateOrder(data)}
         onApprove={async (data) => mutate(data?.orderID)}
-        // TODO: Handle error with react-toastify
-        onError={() => void 0}
+        onShippingOptionsChange={() => Promise.resolve()}
+        onError={() => toast(t('errors.paymentError'), { type: 'error' })}
       />
     </PayPalScriptProvider>
   );
