@@ -1,5 +1,6 @@
 import '@/styles/globals.scss';
 import '@fortawesome/fontawesome-svg-core/styles.css';
+import 'react-toastify/dist/ReactToastify.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import {

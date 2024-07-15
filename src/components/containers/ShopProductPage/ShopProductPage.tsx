@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import { useTranslation } from 'next-i18next';
+import { toast } from 'react-toastify';
 import PayPal from '@/components/compositions/PayPal/PayPal';
 import Section from '@/components/compositions/Section/Section';
 import { Colors } from '@/constants/colors';
@@ -28,7 +29,13 @@ const ShopProductPage = () => {
         {data?.orderPrice?.toFixed(2) + ' €'}
         <select
           value={quantity}
-          onChange={(e) => handleQuantityChange(Number(e?.target?.value))}
+          onChange={(e) => {
+            toast('Changed', { type: 'success' });
+            toast('Changed', { type: 'error' });
+            toast('Changed', { type: 'warning' });
+            toast('Changed', { type: 'info' });
+            handleQuantityChange(Number(e?.target?.value));
+          }}
         >
           <option defaultValue={1}>1</option>
           <option value={2}>2</option>
