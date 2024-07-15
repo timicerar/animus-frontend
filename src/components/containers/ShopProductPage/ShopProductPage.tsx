@@ -21,7 +21,8 @@ const ShopProductPage = () => {
         backgroundColor={Colors.BACKGROUND}
       >
         <div>
-          TODO: Product page with checkbox and select
+          TODO: Product page with checkbox and select and button for plačilo po
+          povzetju
           <br />
           {product?.title}
           <br />
