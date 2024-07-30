@@ -27,6 +27,8 @@ export const Currency = {
   USD: 'USD',
 } as const;
 
+export type PriceCurrency = (typeof Currency)[keyof typeof Currency];
+
 export const Category = {
   DIGITAL_GOODS: 'DIGITAL_GOODS',
   PHYSICAL_GOODS: 'PHYSICAL_GOODS',

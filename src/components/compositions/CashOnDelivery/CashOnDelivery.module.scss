@@ -1,0 +1,35 @@
+@import "src/styles";
+
+.button {
+  @include typography-paragraph;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  border-radius: 4px;
+  text-transform: unset;
+}
+
+.content {
+  margin-top: 8px;
+
+  .link {
+    color: var(--color-blue);
+
+    @include hover {
+      text-decoration: underline;
+    }
+  }
+
+  .paragraph, ul {
+    @include typography-paragraph;
+    color: var(--color-black);
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  .marginBottom {
+    margin-bottom: 8px;
+  }
+}
+

@@ -10,7 +10,8 @@ export type ButtonColor =
   | 'Green'
   | 'Blue'
   | 'Yellow'
-  | 'Gray';
+  | 'Gray'
+  | 'Paypal';
 
 export type ButtonProps = {
   className?: string;

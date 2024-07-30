@@ -1,0 +1,33 @@
+@import "src/styles";
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+
+  @include mq('xs2') {
+    align-items: flex-start;
+  }
+
+  .checkbox {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    accent-color: var(--color-black);
+    cursor: pointer;
+
+    @include mq('xs2') {
+      margin: 2px 0 0;
+    }
+  }
+
+  .label {
+    @include typography-paragraph;
+    color: var(--color-black);
+
+    @include mq('sm') {
+      @include typography-citation-3;
+    }
+  }
+}

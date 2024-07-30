@@ -46,6 +46,11 @@
     @include buttonState(var(--color-gray-hover), var(--color-gray-active));
   }
 
+  &.primaryPaypal {
+    @include buttonColor(var(--color-white), var(--color-paypal), var(--color-paypal));
+    @include buttonState(var(--color-paypal-hover), var(--color-paypal-active));
+  }
+
   @include buttonPrimaryDisabled;
 }
 

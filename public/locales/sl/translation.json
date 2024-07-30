@@ -282,7 +282,20 @@
     },
     "productDetails": {
       "shipping": "Poštnina je brezplačna<breakPoint />(velja za Slovenijo).",
-      "termsAndConditions": "Prebral sem <linkComponent>splošne pogoje poslovanja</linkComponent> in se z njimi strinjam."
+      "termsAndConditions": "Prebral sem <linkComponent>splošne pogoje poslovanja</linkComponent> in se z njimi strinjam.",
+      "numberOfCopies": "število izvodov:",
+      "cashOnDelivery": {
+        "button": "Po povzetju",
+        "paragraphs": {
+          "1": "Če knjigo želiš plačati po povzetju nam pošlji <bold>elektronsko pošto</bold> na <linkComponent>info@aljatera.com</linkComponent>.",
+          "2": "V polje za vsebino vpiši:",
+          "3": "Ime in priimek",
+          "4": "Število izvodov",
+          "5": "Naslov za dostavo",
+          "6": "Telefonsko številko",
+          "7": "Pri plačilu po povzetju nastanejo dodatni stroški, ker Pošta Slovenije zaračunava provizijo ob nakazilu (končni znesek za plačilo je 31,05 EUR). Če se tem stroškom želite izogniti, denar lahko nakažete neposredno na naš transakcijski račun: SI56 6100 0002 5497 670; namen plačila: Animus; sklic SI00 2024-datum, koda plačila: OTHR; naslov prejemnika: Aljatera, zavod za založniško dejavnost, Gregorčičeva 4, 9252 Radenci. Nujno vpišite svoje ime in naslov (te podatke bomo uporabili na računu in pri pošiljanju)."
+        }
+      }
     }
   },
   "purchaseSuccessPage": {
