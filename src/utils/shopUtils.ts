@@ -2,12 +2,24 @@ import { i18n } from 'next-i18next';
 import AnimusPartOneImage from 'public/images/covers/animus_part_1.jpg';
 import AnimusPartTwoImage from 'public/images/covers/animus_part_2.jpg';
 import AnimusPartThreeImage from 'public/images/covers/animus_part_3.jpg';
+import AnimusTrilogy from 'public/images/covers/animus_trilogy.png';
 import { Currency } from '@/api/models/PayPal';
 import { BookId, BookIds, ShopProduct } from '@/api/models/ShopProduct';
 import { ShopRoutes } from '@/constants/routes';
 
 export const getShopProducts = (): ShopProduct[] => {
   return [
+    {
+      bookId: BookIds.ANIMUS_TRILOGY,
+      href: ShopRoutes.SHOP_TRILOGY,
+      image: AnimusTrilogy,
+      title: i18n?.t('shopPage.products.4.title') || '',
+      payPalTitle: i18n?.t('shopPage.products.4.payPalTitle') || '',
+      caption: i18n?.t('shopPage.products.4.caption') || '',
+      price: 60,
+      discountPrice: 0,
+      currency: Currency.EUR,
+    },
     {
       bookId: BookIds.ANIMUS_PART_1,
       href: ShopRoutes.SHOP_PART_1,

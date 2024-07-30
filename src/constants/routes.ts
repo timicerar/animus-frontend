@@ -14,6 +14,7 @@ export const Routes = {
 export type Route = (typeof Routes)[keyof typeof Routes];
 
 export const ShopRoutes = {
+  SHOP_TRILOGY: `/shop/${BookIds.ANIMUS_TRILOGY}`,
   SHOP_PART_1: `/shop/${BookIds.ANIMUS_PART_1}`,
   SHOP_PART_2: `/shop/${BookIds.ANIMUS_PART_2}`,
   SHOP_PART_3: `/shop/${BookIds.ANIMUS_PART_3}`,
