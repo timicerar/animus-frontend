@@ -28,10 +28,10 @@ export const getShopProducts = (): ShopProduct[] => {
       image: AnimusPartTwoImage,
       title:
         i18n?.t('shopPage.products.2.title') || 'ANIMUS: Med svetlobo in temo',
-      payPalTitle: i18n?.t('shopPage.products.2.payPalTitle') || '2. del',
-      caption:
-        i18n?.t('shopPage.products.2.caption') ||
+      payPalTitle:
+        i18n?.t('shopPage.products.2.payPalTitle') ||
         'Knjiga Animus: Med svetlobo in temo',
+      caption: i18n?.t('shopPage.products.2.caption') || '2. del',
       price: 29.9,
       discountPrice: 0,
       currency: Currency.EUR,
