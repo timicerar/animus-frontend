@@ -25,10 +25,19 @@ export default async function handler(
           });
         }
 
+        console.log('Before PayPalClient()');
+
         const payPalHttpClient = PayPalClient();
         const request = new PayPal.orders.OrdersCreateRequest();
 
+        console.log('After PayPalClient() and request.');
+
         request.headers['Prefer'] = 'return=representation';
+
+        console.log(
+          'Purchase unit',
+          getPurchaseUnitByBookId(orderPrice, bookId)
+        );
 
         request.requestBody({
           intent: Intent.CAPTURE,
