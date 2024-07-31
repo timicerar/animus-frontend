@@ -23,6 +23,16 @@ export const getPurchaseUnitByBookId = (
   orderPrice: number,
   bookId: BookId
 ): PurchaseUnitRequest[] => {
+  return [
+    {
+      amount: {
+        currency_code: 'USD',
+        value: orderPrice.toFixed(2),
+      },
+      reference_id: bookId,
+    },
+  ];
+
   const product = getShopProductByBookId(bookId);
 
   if (!product) {
