@@ -18,7 +18,9 @@ const DisplayPrice = ({ price, discountPrice = 0 }: DisplayPriceProps) => {
   return (
     <p className={classes.price}>
       <span className={classes.totalPrice}>{displayPrice(price)}</span>{' '}
-      <span>{displayPrice(discountPrice)}</span>
+      <span className={classes.discountPrice}>
+        {displayPrice(discountPrice)}
+      </span>
     </p>
   );
 };
