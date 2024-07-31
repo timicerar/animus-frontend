@@ -2,7 +2,7 @@ import { i18n } from 'next-i18next';
 import AnimusPartOneImage from 'public/images/covers/animus_part_1.jpg';
 import AnimusPartTwoImage from 'public/images/covers/animus_part_2.jpg';
 import AnimusPartThreeImage from 'public/images/covers/animus_part_3.jpg';
-import AnimusTrilogy from 'public/images/covers/animus_trilogy.png';
+import AnimusTrilogy from 'public/images/covers/animus_trilogy.jpg';
 import { Currency } from '@/api/models/PayPal';
 import { BookId, BookIds, ShopProduct } from '@/api/models/ShopProduct';
 import { ShopRoutes } from '@/constants/routes';

@@ -21,8 +21,12 @@
 }
 
 .heroImage {
-  object-fit: contain;
+  object-fit: cover;
   height: 100%;
+
+  @include mq('xl', min) {
+    object-fit: contain;
+  }
 }
 
 .bookSection {
