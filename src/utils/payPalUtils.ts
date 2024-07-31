@@ -19,10 +19,7 @@ export const PayPalClient = () => {
   return new checkoutNodeJssdk.core.PayPalHttpClient(configureEnvironment());
 };
 
-export const getPurchaseUnitByBookId = (
-  orderPrice: number,
-  bookId: BookId
-): PurchaseUnitRequest[] => {
+export const getPurchaseUnitByBookId = (orderPrice: number, bookId: BookId) => {
   const product = getShopProductByBookId(bookId);
 
   if (!product) {
@@ -54,35 +51,10 @@ export const getPurchaseUnitByBookId = (
             currency_code: product?.currency,
             value: orderPrice?.toString(),
           },
-          discount: {
-            currency_code: product?.currency,
-            value: '0',
-          },
-          handling: {
-            currency_code: product?.currency,
-            value: '0',
-          },
-          insurance: {
-            currency_code: product?.currency,
-            value: '0',
-          },
-          shipping: {
-            currency_code: product?.currency,
-            value: '0',
-          },
-          shipping_discount: {
-            currency_code: product?.currency,
-            value: '0',
-          },
-          tax_total: {
-            currency_code: product?.currency,
-            value: '0',
-          },
         },
       },
       items: [
         {
-          sku: uuidv4(),
           name: product?.payPalTitle,
           description: product?.description,
           unit_amount: {

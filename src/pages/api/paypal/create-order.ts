@@ -1,5 +1,8 @@
 import PayPal from '@paypal/checkout-server-sdk';
-import { Order } from '@paypal/checkout-server-sdk/lib/orders/lib';
+import {
+  Order,
+  PurchaseUnitRequest,
+} from '@paypal/checkout-server-sdk/lib/orders/lib';
 import { HttpResponse } from '@paypal/paypalhttp';
 import { NextApiRequest, NextApiResponse } from 'next';
 import { Intent } from '@/api/models/PayPal';
@@ -36,7 +39,10 @@ export default async function handler(
 
         request.requestBody({
           intent: Intent.CAPTURE,
-          purchase_units: getPurchaseUnitByBookId(orderPrice, bookId),
+          purchase_units: getPurchaseUnitByBookId(
+            orderPrice,
+            bookId
+          ) as PurchaseUnitRequest[],
         });
 
         const response: HttpResponse<Order> =
