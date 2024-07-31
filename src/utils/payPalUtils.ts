@@ -9,7 +9,7 @@ const configureEnvironment = () => {
   const clientId = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID || '';
   const clientSecret = process.env.PAYPAL_CLIENT_SECRET || '';
 
-  return process.env.NODE_ENV === Environment.PRODUCTION
+  return process.env.NEXT_PUBLIC_ENVIRONMENT === Environment.PRODUCTION
     ? new checkoutNodeJssdk.core.LiveEnvironment(clientId, clientSecret)
     : new checkoutNodeJssdk.core.SandboxEnvironment(clientId, clientSecret);
 };

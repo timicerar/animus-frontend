@@ -39,10 +39,6 @@ function MyApp({
   Component,
   pageProps,
 }: AppPropsWithLayout<{ dehydratedState: DehydratedState }>) {
-  console.log(
-    "------ You're viewing " + process.env.NODE_ENV + ' environment ------'
-  );
-
   const { t } = useTranslation();
   const [queryClient] = useState(
     () =>
