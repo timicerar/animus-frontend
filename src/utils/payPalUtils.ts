@@ -26,7 +26,7 @@ export const getPurchaseUnitByBookId = (
   return [
     {
       amount: {
-        currency_code: 'USD',
+        currency_code: 'EUR',
         value: orderPrice.toFixed(2),
       },
       reference_id: bookId,
