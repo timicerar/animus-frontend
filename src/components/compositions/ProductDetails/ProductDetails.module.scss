@@ -89,11 +89,6 @@
   flex-direction: column;
   gap: 12px;
 
-  .price {
-    @include typography-h3-bold;
-    color: var(--color-black);
-  }
-
   .numberOfCopies {
     display: flex;
     flex-direction: column;

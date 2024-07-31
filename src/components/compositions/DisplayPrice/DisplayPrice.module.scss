@@ -1,0 +1,16 @@
+@import "src/styles";
+
+.price {
+  @include typography-h3-bold;
+  color: var(--color-black);
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.totalPrice {
+  @include typography-citation-bold;
+  color: var(--color-gray);
+  text-decoration: line-through;
+}

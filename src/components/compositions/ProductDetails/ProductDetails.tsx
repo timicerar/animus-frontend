@@ -8,16 +8,17 @@ import Checkbox from '@/components/components/Checkbox/Checkbox';
 import NextImage from '@/components/components/NextImage/NextImage';
 import Select from '@/components/components/Select/Select';
 import CashOnDelivery from '@/components/compositions/CashOnDelivery/CashOnDelivery';
+import DisplayPrice from '@/components/compositions/DisplayPrice/DisplayPrice';
 import PayPal from '@/components/compositions/PayPal/PayPal';
 import { Routes } from '@/constants/routes';
 import useShopProvider from '@/hooks/useShopProvider';
-import { displayPrice } from '@/utils/stringUtils';
 import classes from './ProductDetails.module.scss';
 
 const ProductDetails = () => {
   const { t } = useTranslation();
   const { replace } = useRouter();
-  const { product, data, options, handleQuantityChange } = useShopProvider();
+  const { product, data, totalPrice, options, handleQuantityChange } =
+    useShopProvider();
   const [checked, setChecked] = useState(false);
 
   useEffect(() => {
@@ -51,7 +52,7 @@ const ProductDetails = () => {
         </p>
       </div>
       <div className={classes.priceWrapper}>
-        <p className={classes.price}>{displayPrice(data?.orderPrice)}</p>
+        <DisplayPrice price={totalPrice} discountPrice={data?.orderPrice} />
         <div className={classes.numberOfCopies}>
           <p>{t('shopPage.productDetails.numberOfCopies')}</p>
           <Select

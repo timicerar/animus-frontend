@@ -9,13 +9,22 @@ const useShopProvider = () => {
   const product = getShopProductByBookId(params?.product);
 
   const initialQuantityState = 1;
+  const initialPrice = useMemo(
+    () =>
+      product
+        ? product?.discountPrice && product?.discountPrice > 0
+          ? product?.discountPrice
+          : product?.price
+        : 0,
+    [product]
+  );
+  const initialTotalPrice = useMemo(
+    () => (product ? product?.price : 0),
+    [product]
+  );
   const initialDataState: PayPalCreateOrderRequest = {
     bookId: product?.bookId || '',
-    orderPrice: product
-      ? product?.discountPrice && product?.discountPrice > 0
-        ? product?.discountPrice
-        : product?.price
-      : 0,
+    orderPrice: initialPrice,
   };
 
   const options = [
@@ -33,12 +42,14 @@ const useShopProvider = () => {
 
   const [quantity, setQuantity] = useState(initialQuantityState);
   const [data, setData] = useState<PayPalCreateOrderRequest>(initialDataState);
+  const [totalPrice, setTotalPrice] = useState<number>(initialTotalPrice);
 
   const handleQuantityChange = (quantity: number) => {
     if (!product) {
       return;
     }
 
+    const totalPrice = Number((product?.price * quantity)?.toFixed(1));
     let orderPrice = 0;
 
     if (product?.discountPrice && product?.discountPrice > 0) {
@@ -48,6 +59,7 @@ const useShopProvider = () => {
     }
 
     setQuantity(quantity);
+    setTotalPrice(totalPrice);
     setData((prevState) => ({ ...prevState, orderPrice: orderPrice }));
   };
 
@@ -61,6 +73,7 @@ const useShopProvider = () => {
     data,
     quantity,
     options,
+    totalPrice,
     handleQuantityChange,
     getShopProductByBookId,
   };
