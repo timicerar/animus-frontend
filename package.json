@@ -1,6 +1,6 @@
 {
   "name": "nextjs-animus-frontend",
-  "homepage": "https://aljatera.com",
+  "homepage": "https://animus-frontend.vercel.app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
