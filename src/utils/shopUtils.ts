@@ -13,9 +13,11 @@ export const getShopProducts = (): ShopProduct[] => {
       bookId: BookIds.ANIMUS_PART_1,
       href: ShopRoutes.SHOP_PART_1,
       image: AnimusPartOneImage,
-      title: i18n?.t('shopPage.products.1.title') || '',
-      payPalTitle: i18n?.t('shopPage.products.1.payPalTitle') || '',
-      caption: i18n?.t('shopPage.products.1.caption') || '',
+      title: i18n?.t('shopPage.products.1.title') || 'ANIMUS: V svetu senc',
+      payPalTitle:
+        i18n?.t('shopPage.products.1.payPalTitle') ||
+        'Knjiga Animus: V svetu senc',
+      caption: i18n?.t('shopPage.products.1.caption') || '1. del',
       price: 29.9,
       discountPrice: 0,
       currency: Currency.EUR,
@@ -24,9 +26,12 @@ export const getShopProducts = (): ShopProduct[] => {
       bookId: BookIds.ANIMUS_PART_2,
       href: ShopRoutes.SHOP_PART_2,
       image: AnimusPartTwoImage,
-      title: i18n?.t('shopPage.products.2.title') || '',
-      payPalTitle: i18n?.t('shopPage.products.2.payPalTitle') || '',
-      caption: i18n?.t('shopPage.products.2.caption') || '',
+      title:
+        i18n?.t('shopPage.products.2.title') || 'ANIMUS: Med svetlobo in temo',
+      payPalTitle: i18n?.t('shopPage.products.2.payPalTitle') || '2. del',
+      caption:
+        i18n?.t('shopPage.products.2.caption') ||
+        'Knjiga Animus: Med svetlobo in temo',
       price: 29.9,
       discountPrice: 0,
       currency: Currency.EUR,
@@ -35,9 +40,11 @@ export const getShopProducts = (): ShopProduct[] => {
       bookId: BookIds.ANIMUS_PART_3,
       href: ShopRoutes.SHOP_PART_3,
       image: AnimusPartThreeImage,
-      title: i18n?.t('shopPage.products.3.title') || '',
-      payPalTitle: i18n?.t('shopPage.products.3.payPalTitle') || '',
-      caption: i18n?.t('shopPage.products.3.caption') || '',
+      title: i18n?.t('shopPage.products.3.title') || 'ANIMUS: Ravnovesje',
+      payPalTitle:
+        i18n?.t('shopPage.products.3.payPalTitle') ||
+        'Knjiga Animus: Ravnovesje',
+      caption: i18n?.t('shopPage.products.3.caption') || '3. del',
       price: 29.9,
       discountPrice: 0,
       currency: Currency.EUR,
@@ -46,9 +53,11 @@ export const getShopProducts = (): ShopProduct[] => {
       bookId: BookIds.ANIMUS_TRILOGY,
       href: ShopRoutes.SHOP_TRILOGY,
       image: AnimusTrilogy,
-      title: i18n?.t('shopPage.products.4.title') || '',
-      payPalTitle: i18n?.t('shopPage.products.4.payPalTitle') || '',
-      caption: i18n?.t('shopPage.products.4.caption') || '',
+      title: i18n?.t('shopPage.products.4.title') || 'ANIMUS: Trilogija',
+      payPalTitle:
+        i18n?.t('shopPage.products.4.payPalTitle') || 'Animus: Trilogija',
+      caption:
+        i18n?.t('shopPage.products.4.caption') || 'Nakup trilogije ceneje!',
       price: 89.7,
       discountPrice: 70,
       currency: Currency.EUR,
