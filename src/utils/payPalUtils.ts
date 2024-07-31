@@ -1,5 +1,6 @@
 import checkoutNodeJssdk from '@paypal/checkout-server-sdk';
 import { PurchaseUnitRequest } from '@paypal/checkout-server-sdk/lib/orders/lib';
+import { v4 } from 'uuid';
 import { Category, Currency } from '@/api/models/PayPal';
 import { BookId } from '@/api/models/ShopProduct';
 import { Environment } from '@/constants/evnironment';
@@ -44,6 +45,7 @@ export const getPurchaseUnitByBookId = (
 
   return [
     {
+      invoice_id: v4(),
       amount: {
         currency_code: product?.currency,
         value: orderPrice?.toString(),
@@ -80,6 +82,7 @@ export const getPurchaseUnitByBookId = (
       },
       items: [
         {
+          sku: v4(),
           name: product?.payPalTitle,
           description: product?.description,
           unit_amount: {

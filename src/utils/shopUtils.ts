@@ -10,17 +10,6 @@ import { ShopRoutes } from '@/constants/routes';
 export const getShopProducts = (): ShopProduct[] => {
   return [
     {
-      bookId: BookIds.ANIMUS_TRILOGY,
-      href: ShopRoutes.SHOP_TRILOGY,
-      image: AnimusTrilogy,
-      title: i18n?.t('shopPage.products.4.title') || '',
-      payPalTitle: i18n?.t('shopPage.products.4.payPalTitle') || '',
-      caption: i18n?.t('shopPage.products.4.caption') || '',
-      price: 89.7,
-      discountPrice: 60,
-      currency: Currency.EUR,
-    },
-    {
       bookId: BookIds.ANIMUS_PART_1,
       href: ShopRoutes.SHOP_PART_1,
       image: AnimusPartOneImage,
@@ -51,6 +40,17 @@ export const getShopProducts = (): ShopProduct[] => {
       caption: i18n?.t('shopPage.products.3.caption') || '',
       price: 29.9,
       discountPrice: 0,
+      currency: Currency.EUR,
+    },
+    {
+      bookId: BookIds.ANIMUS_TRILOGY,
+      href: ShopRoutes.SHOP_TRILOGY,
+      image: AnimusTrilogy,
+      title: i18n?.t('shopPage.products.4.title') || '',
+      payPalTitle: i18n?.t('shopPage.products.4.payPalTitle') || '',
+      caption: i18n?.t('shopPage.products.4.caption') || '',
+      price: 89.7,
+      discountPrice: 70,
       currency: Currency.EUR,
     },
   ];

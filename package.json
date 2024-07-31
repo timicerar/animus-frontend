@@ -33,7 +33,8 @@
     "react-dom": "18.2.0",
     "react-i18next": "~14.0.0",
     "react-toastify": "^10.0.5",
-    "sharp": "~0.33.2"
+    "sharp": "~0.33.2",
+    "uuid": "^10.0.0"
   },
   "devDependencies": {
     "@tanstack/eslint-plugin-query": "~5.17.7",
@@ -45,6 +46,7 @@
     "@types/paypal__checkout-server-sdk": "^1.0.8",
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
+    "@types/uuid": "^10.0.0",
     "@typescript-eslint/eslint-plugin": "~6.19.0",
     "@typescript-eslint/parser": "~6.19.0",
     "eslint": "~8.56.0",
