@@ -30,10 +30,6 @@ export default async function handler(
 
         request.headers['Prefer'] = 'return=representation';
 
-        console.log(
-          JSON.stringify(getPurchaseUnitByBookId(orderPrice, bookId))
-        );
-
         request.requestBody({
           intent: Intent.CAPTURE,
           purchase_units: getPurchaseUnitByBookId(orderPrice, bookId),
