@@ -17,7 +17,7 @@ export const getShopProducts = (): ShopProduct[] => {
       payPalTitle: i18n?.t('shopPage.products.4.payPalTitle') || '',
       caption: i18n?.t('shopPage.products.4.caption') || '',
       price: 60,
-      discountPrice: 60,
+      discountPrice: 0,
       currency: Currency.EUR,
     },
     {
