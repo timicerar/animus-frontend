@@ -8,6 +8,7 @@
     "dev-turbo": "next dev --turbo",
     "build": "next build",
     "start": "next start",
+    "start-node": "NODE_ENV=production node server.js",
     "lint": "next lint",
     "test": "jest --ci",
     "tsc": "tsc --noemit"
