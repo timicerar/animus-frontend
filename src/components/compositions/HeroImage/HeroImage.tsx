@@ -27,6 +27,7 @@ const HeroImage = ({
         src={image}
         alt="hero-image"
         priority
+        quality={100}
         className={classNames(classes.image, styles?.image)}
       />
     </Section>

@@ -20,6 +20,7 @@ const NextImage = ({
   const image = (
     <Image
       {...props}
+      quality={props?.quality}
       alt={props?.alt}
       priority={priority}
       className={classNames(classes.nextImage, className)}

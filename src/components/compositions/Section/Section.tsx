@@ -42,6 +42,7 @@ const Section = ({
           src={backgroundImage}
           alt="section-background"
           priority
+          quality={100}
           className={classes.image}
         />
       )}
