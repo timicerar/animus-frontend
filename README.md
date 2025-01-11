@@ -92,3 +92,21 @@ npm run build
 
 After completing the steps above, your application should be accessible at:
 https://aljatera.com.
+
+## 🚀 Deploying to Vercel
+
+An alternative deployment method is to use Vercel, which is optimized for Next.js applications. The app has already been set up and deployed to Vercel.
+
+You can view the live deployment here:
+https://animus-frontend.vercel.app/
+
+**Steps for Deploying to Vercel:**
+
+1. Log in to `Vercel` with your GitHub account.
+2. Click `New Project` and import your GitHub repository.
+3. During setup:
+   - Ensure the Framework Preset is set to Next.js.
+   - Add all necessary environment variables.
+4. Click Deploy.
+
+   Vercel will build and deploy your app automatically.
