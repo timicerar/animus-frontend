@@ -11,7 +11,7 @@ Follow these steps to set up and run the application on your local machine:
 Clone the repository or fork it to your GitHub account and then clone your fork.
 
 ```bash
-git clone https://github.com/timicerar/animus-frontend.git`
+git clone https://github.com/timicerar/animus-frontend.git
 ```
 
 **2. Install Dependencies 👨‍💻**
