@@ -2,20 +2,24 @@
 
 .container {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 32px;
-  min-height: 640px;
 
-  @include mq('sm') {
-    padding: 64px 32px;
+  &.flexGrow {
+    flex: 1;
   }
 }
 
 .children {
-  width: inherit;
+  position: relative;
   z-index: $section-children-z-index;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 640px;
+  padding: 32px;
+
+  @include mq('sm') {
+    padding: 64px 32px;
+  }
 }
 
 .image {

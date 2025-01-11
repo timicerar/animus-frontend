@@ -20,6 +20,7 @@ const FirstBook = () => {
         src={AnimusPartOneImage}
         alt="animus-part-one-book"
         className={classes.image}
+        priority
       />
     </div>
   );

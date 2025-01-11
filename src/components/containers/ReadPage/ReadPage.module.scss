@@ -11,6 +11,10 @@
     @include typography-h1-bold;
     @include typography-uppercase;
     text-align: center;
+
+    @include mq('xs2') {
+      font-size: 32px;
+    }
   }
 }
 

@@ -17,6 +17,7 @@ const ShopProductPage = () => {
       <Section
         className={classNames(classes.pageSection, customClasses.pageSection)}
         backgroundColor={Colors.BACKGROUND}
+        flexGrow
       >
         <ProductDetails />
       </Section>

@@ -20,6 +20,7 @@ const TermsAndConditionsPage = () => {
       <Section
         className={classNames(classes.pageSection, customClasses.pageSection)}
         backgroundColor={Colors.BACKGROUND}
+        flexGrow
       >
         <TermsAndConditions />
       </Section>
